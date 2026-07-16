@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Praveen Kumar Moses — Author & Teacher</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Praveen Kumar Moses — Bible Teacher & Author</title>
+    <meta name="description" content="Official website of Praveen Kumar Moses, software engineer, Bible teacher, and author. Explore plain-language theological frameworks, books, and ministries." />
+    <meta name="keywords" content="Praveen Kumar Moses, Praveen Kumar Moses Bible Teacher, Praveen Kumar Moses Bible Author, Bible Made Easy for Everyone, Love and Love Only, Regen Life Ministries, Tamil Kingdom Media" />
+    <link rel="canonical" href="https://praveenkumarmoses.github.io/" />
+
+    <!-- Open Graph / Facebook (For elegant social media sharing) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Praveen Kumar Moses — Bible Teacher & Author" />
+    <meta property="og:description" content="Explore clear theological frameworks, books, and ministries by Praveen Kumar Moses." />
+    <meta property="og:url" content="https://praveenkumarmoses.github.io/" />
+    <meta property="og:image" content="https://praveenkumarmoses.github.io/profile_large.jpg" />
+    <meta property="profile:first_name" content="Praveen" />
+    <meta property="profile:last_name" content="Moses" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Praveen Kumar Moses — Bible Teacher & Author" />
+    <meta name="twitter:description" content="Explore clear theological frameworks, books, and ministries by Praveen Kumar Moses." />
+    <meta name="twitter:image" content="https://praveenkumarmoses.github.io/profile_large.jpg" />
+
+    <!-- Structured Data (JSON-LD Schema) — Tells Google exactly who you are -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Praveen Kumar Moses",
+      "url": "https://praveenkumarmoses.github.io/",
+      "image": "https://praveenkumarmoses.github.io/profile_large.jpg",
+      "jobTitle": ["Bible Teacher", "Author", "Software Engineer"],
+      "sameAs": [
+        "https://youtube.com/@regenlifeministries",
+        "https://instagram.com/regenlifeministries",
+        "https://youtube.com/@tamilkingdommedia",
+        "https://instagram.com/tamilkingdommedia"
+      ],
+      "description": "Praveen Kumar Moses is a software engineer, Bible teacher, and author focused on designing clear scriptural frameworks.",
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Regen Life Ministries"
+        },
+        {
+          "@type": "Brand",
+          "name": "Tamil Kingdom Media"
+        }
+      ]
+    }
+    </script>
 
     <!-- Modern Retina SVG Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
@@ -65,6 +114,14 @@
         padding: 0 24px;
       }
 
+      /* Thin Line Section Separator */
+      .section-divider {
+        border: 0;
+        border-top: 1px solid var(--color-border);
+        max-width: var(--maxw);
+        margin: 0 auto;
+      }
+
       /* Eyebrow Style */
       .eyebrow {
         font-size: 11px;
@@ -72,7 +129,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         color: var(--color-text-light);
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         display: inline-block;
       }
 
@@ -109,7 +166,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 16px 24px;
+        padding: 14px 24px;
         max-width: var(--maxw);
         margin: 0 auto;
       }
@@ -141,7 +198,7 @@
       .nav-cta {
         background: var(--color-accent);
         color: var(--color-text-inverse);
-        padding: 10px 20px;
+        padding: 8px 18px;
         border-radius: var(--radius-pill);
         font-size: 13px;
         font-weight: 700;
@@ -156,9 +213,9 @@
         nav.links { display: none; }
       }
 
-      /* Hero Section (Self Intro with Big Photo) */
+      /* Hero Section */
       .hero {
-        padding: 80px 0 100px;
+        padding: 60px 0 80px;
       }
       .hero-grid {
         display: grid;
@@ -167,12 +224,12 @@
         align-items: center;
       }
       @media (max-width: 880px) {
-        .hero-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+        .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
         .hero-actions { justify-content: center; }
       }
       .hero h1 {
-        font-size: clamp(38px, 5vw, 54px);
-        margin-bottom: 24px;
+        font-size: clamp(36px, 5vw, 50px);
+        margin-bottom: 20px;
       }
       .hero h1 em {
         font-style: normal;
@@ -181,13 +238,13 @@
       .hero-sub {
         font-size: 18px;
         color: var(--color-text-light);
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         line-height: 1.7;
       }
       .hero-extra {
         font-size: 16px;
         color: var(--color-text-light);
-        margin-bottom: 36px;
+        margin-bottom: 30px;
       }
       .hero-actions {
         display: flex;
@@ -197,7 +254,7 @@
       .btn-primary {
         background: var(--color-accent);
         color: var(--color-text-inverse);
-        padding: 14px 28px;
+        padding: 12px 24px;
         border-radius: 8px;
         font-weight: 700;
         font-size: 14px;
@@ -208,7 +265,7 @@
       .btn-primary:hover { background: var(--color-accent-hover); }
       .btn-secondary {
         border: 1px solid #cccccc;
-        padding: 14px 28px;
+        padding: 12px 24px;
         border-radius: 8px;
         font-weight: 700;
         font-size: 14px;
@@ -221,7 +278,7 @@
       .hero-art .frame {
         background: var(--color-card-bg);
         border-radius: var(--radius-card);
-        padding: 24px;
+        padding: 20px;
         box-shadow: 0 20px 40px rgba(0,0,0,0.04);
         border: 1px solid var(--color-border);
       }
@@ -233,16 +290,16 @@
       }
 
       /* Sections General Layout */
-      section.section { padding: 100px 0; }
-      .section-head { max-width: 640px; margin-bottom: 60px; }
-      .section-head h2 { font-size: clamp(28px, 4vw, 38px); margin-top: 8px; margin-bottom: 16px; }
-      .section-head p { color: var(--color-text-light); font-size: 17px; }
+      section.section { padding: 70px 0; }
+      .section-head { max-width: 640px; margin-bottom: 40px; }
+      .section-head h2 { font-size: clamp(26px, 4vw, 34px); margin-top: 8px; margin-bottom: 12px; }
+      .section-head p { color: var(--color-text-light); font-size: 16px; }
 
-      /* Books Section (Side-by-Side Cards Layout) */
+      /* Books Section */
       .books-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+        gap: 24px;
       }
       @media (max-width: 768px) {
         .books-grid { grid-template-columns: 1fr; }
@@ -251,20 +308,20 @@
         background: var(--color-card-bg);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-card);
-        padding: 40px;
+        padding: 32px;
         box-shadow: 0 4px 20px rgba(0,0,0,0.01);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
       .book-meta h3 {
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 12px;
       }
       .book-meta p {
         color: var(--color-text-light);
-        font-size: 16px;
-        margin-bottom: 32px;
+        font-size: 15px;
+        margin-bottom: 24px;
         line-height: 1.65;
       }
       .book-btn {
@@ -274,7 +331,7 @@
         color: var(--color-text-dark);
         font-weight: 700;
         font-size: 13px;
-        padding: 12px 24px;
+        padding: 10px 20px;
         border-radius: 8px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -286,63 +343,296 @@
         color: var(--color-text-inverse);
       }
 
-      /* Ministries Section (Dark Mode Structural Blocks Pattern) */
+      /* Roadmap Timeline */
+      .roadmap-container {
+        margin-top: 60px;
+        border-top: 1px solid var(--color-border);
+        padding-top: 60px;
+      }
+      .roadmap-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+        position: relative;
+      }
+      @media (max-width: 960px) {
+        .roadmap-grid { grid-template-columns: 1fr; gap: 24px; }
+      }
+      .roadmap-node {
+        background: var(--color-card-bg);
+        border: 1px solid var(--color-border);
+        padding: 20px;
+        border-radius: var(--radius-card);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+      }
+      .roadmap-node.released {
+        border-color: var(--color-accent);
+      }
+      .roadmap-status {
+        font-size: 9px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-bottom: 12px;
+        align-self: flex-start;
+      }
+      .roadmap-node.released .roadmap-status {
+        background: #000000;
+        color: #ffffff;
+      }
+      .roadmap-node.planned .roadmap-status {
+        background: #f0f0f0;
+        color: #666666;
+      }
+      .roadmap-node h4 {
+        font-size: 15px;
+        margin-bottom: 4px;
+        font-weight: 800;
+      }
+      .roadmap-node .subtitle {
+        font-size: 11px;
+        color: var(--color-text-light);
+        font-weight: 600;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .roadmap-date {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--color-text-dark);
+        margin-top: auto;
+        border-top: 1px dashed var(--color-border);
+        padding-top: 10px;
+      }
+
+      /* Ministries Section (Dark Mode Block) */
       .ministries {
         background: var(--color-bg-dark);
         color: var(--color-text-inverse);
-        padding: 100px 0;
+        padding: 70px 0;
       }
       .ministries .eyebrow { color: var(--color-text-muted); }
-      .ministries h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 48px; }
+      .ministries h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 32px; }
       .ministries-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 48px;
+        gap: 40px;
         border-top: 1px solid #2a2a2a;
-        padding-top: 48px;
+        padding-top: 40px;
       }
       @media (max-width: 768px) {
-        .ministries-grid { grid-template-columns: 1fr; gap: 40px; }
+        .ministries-grid { grid-template-columns: 1fr; gap: 32px; }
       }
-      .ministry-item h3 {
-        font-size: 22px;
-        letter-spacing: -0.3px;
-        color: var(--color-text-inverse);
+      .ministry-identity {
+        display: flex;
+        align-items: center;
+        gap: 16px;
         margin-bottom: 16px;
       }
+      .ministry-logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        object-fit: cover;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .ministry-item h3 {
+        font-size: 20px;
+        letter-spacing: -0.3px;
+        color: var(--color-text-inverse);
+      }
       .ministry-item p {
-        font-size: 16px;
-        line-height: 1.7;
+        font-size: 15px;
+        line-height: 1.65;
         color: #cccccc;
         margin-bottom: 24px;
       }
+      .ministry-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
 
-      /* Channels Row Component Inside Dark Blocks */
-      .wa-channel-box {
+      /* Action Link Boxes */
+      .wa-channel-box, .spotify-box {
         display: inline-flex;
         align-items: center;
         gap: 12px;
         background: rgba(255, 255, 255, 0.06);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 12px 20px;
+        padding: 10px 18px;
         border-radius: 8px;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         color: #ffffff;
-        transition: background 0.2s;
+        transition: background 0.2s, border-color 0.2s;
+        width: 100%;
+        max-width: 300px;
       }
       .wa-channel-box:hover {
         background: rgba(255, 255, 255, 0.12);
       }
-      .wa-channel-box span.icon {
-        font-size: 18px;
+      .spotify-box:hover {
+        background: rgba(30, 215, 96, 0.15);
+        border-color: #1ed760;
       }
 
-      /* Connections Matrix (Social Links Channels) */
+      /* Reels Section Grid Layout */
+      .reels-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 820px;
+        margin: 0 auto;
+      }
+      @media (max-width: 768px) {
+        .reels-grid { grid-template-columns: 1fr; gap: 48px; }
+      }
+      
+      .reel-card {
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* STRICT MOBILE PORTRAIT ASPECT RATIO (9:16) */
+      .reel-phone-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 320px; /* Restrict width so height scales naturally on desktop */
+        aspect-ratio: 9 / 16; /* Clean 9:16 mobile canvas */
+        background: #0d0d0d;
+        border-radius: 24px;
+        border: 6px solid #1a1a1a; /* Sleek bezel frame design */
+        box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+        overflow: hidden;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+        margin-bottom: 20px;
+      }
+      .reel-phone-wrapper:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 48px rgba(0,0,0,0.25);
+      }
+      .reel-phone-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%);
+        z-index: 1;
+        transition: opacity 0.3s ease;
+      }
+      .reel-phone-wrapper:hover::before {
+        opacity: 0.75;
+      }
+
+      /* Custom Mini-Background Accents for Placeholders */
+      .reel-rlm { background-image: url('rlm_logo.png'); background-size: cover; background-position: center; }
+      .reel-tkm { background-image: url('tkm_logo.jpg'); background-size: cover; background-position: center; }
+
+      .reel-placeholder-content {
+        position: relative;
+        z-index: 2;
+        padding: 24px;
+        pointer-events: none;
+      }
+      .reel-play-icon {
+        width: 56px;
+        height: 56px;
+        background: rgba(255, 255, 255, 0.18);
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 20px;
+        color: #ffffff;
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.2s;
+      }
+      .reel-phone-wrapper:hover .reel-play-icon {
+        transform: scale(1.1);
+        background: #ffffff;
+        color: #000000;
+      }
+      .reel-badge {
+        font-size: 9px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: rgba(255,255,255,0.2);
+        padding: 4px 10px;
+        border-radius: var(--radius-pill);
+        display: inline-block;
+        color: #ffffff;
+      }
+      
+      .reel-meta-info {
+        max-width: 320px;
+      }
+      .reel-meta-info h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        line-height: 1.3;
+      }
+      .reel-meta-info p {
+        color: var(--color-text-light);
+        font-size: 14px;
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+      .reel-action-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--color-accent);
+        transition: color 0.2s;
+      }
+      .reel-card:hover .reel-action-btn {
+        color: var(--color-text-light);
+      }
+
+      /* Live Player Embed Styling */
+      .reel-iframe-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background: #000000;
+      }
+      .reel-iframe-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* Connections Matrix */
       .socials-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: 20px;
       }
       @media (max-width: 640px) {
         .socials-grid { grid-template-columns: 1fr; }
@@ -351,7 +641,7 @@
         background: var(--color-card-bg);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-card);
-        padding: 32px;
+        padding: 28px;
       }
       .social-card h3 {
         font-size: 18px;
@@ -361,20 +651,20 @@
         font-size: 14px;
         color: var(--color-text-muted);
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         font-weight: 600;
       }
       .social-links-wrap {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 10px;
       }
       .social-link-item {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        padding: 8px 16px;
+        padding: 8px 14px;
         background: #f0f0f0;
         border-radius: 6px;
         transition: background 0.2s, color 0.2s;
@@ -388,7 +678,7 @@
       footer.site {
         border-top: 1px solid var(--color-border);
         text-align: center;
-        padding: 40px 0;
+        padding: 32px 0;
         font-size: 13px;
         color: var(--color-text-muted);
         background: var(--color-card-bg);
@@ -405,6 +695,7 @@
         <nav class="links">
           <a href="#books">My Books</a>
           <a href="#ministries">Ministries</a>
+          <a href="#reels">Latest Reels</a>
           <a href="#socials">Connect</a>
         </nav>
         <a class="nav-cta" href="#books">Explore Books</a>
@@ -416,7 +707,7 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy reveal">
-            <span class="eyebrow">Founder &amp; Teacher</span>
+            <span class="eyebrow">Founder & Teacher</span>
             <h1>Hi, I'm <em>Praveen Kumar Moses</em>.</h1>
             <p class="hero-sub">
               I am a software engineer and Bible teacher with a deep passion for clarity and truth. My singular work is built around helping people discover deep structural scriptural roots while navigating life cleanly with an open mind.
@@ -432,12 +723,13 @@
 
           <div class="hero-art reveal">
             <div class="frame">
-              <!-- Replace with a high-res image of yourself -->
               <img src="profile_large.jpg" alt="Praveen Kumar Moses" class="big-photo" />
             </div>
           </div>
         </div>
       </section>
+
+      <hr class="section-divider" />
 
       <!-- 2. MY BOOKS SECTION -->
       <section class="section" id="books">
@@ -467,40 +759,163 @@
               <a class="book-btn" href="./mybooks/love-and-love-only.html" target="_blank">Explore Book</a>
             </div>
           </div>
+
+          <!-- BOOK VISION ROADMAP INTERACTIVE MATRIX -->
+          <div class="roadmap-container reveal">
+            <div class="section-head">
+              <span class="eyebrow">Vision & Pipeline</span>
+              <h3>Publishing Roadmap</h3>
+            </div>
+            
+            <div class="roadmap-grid">
+              <!-- Node 1 -->
+              <div class="roadmap-node released">
+                <div>
+                  <span class="roadmap-status">Released</span>
+                  <h4>Bible — Made Easy for Everyone</h4>
+                  <div class="subtitle">English</div>
+                </div>
+                <div class="roadmap-date">2025</div>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="roadmap-node released">
+                <div>
+                  <span class="roadmap-status">Released</span>
+                  <h4>Love & Love Only</h4>
+                  <div class="subtitle">For Teens & Youth</div>
+                </div>
+                <div class="roadmap-date">June 2026</div>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="roadmap-node planned">
+                <div>
+                  <span class="roadmap-status">Planned</span>
+                  <h4>Bible — Made Easy for Everyone</h4>
+                  <div class="subtitle">Tamil</div>
+                </div>
+                <div class="roadmap-date">Dec 2026</div>
+              </div>
+
+              <!-- Node 4 -->
+              <div class="roadmap-node planned">
+                <div>
+                  <span class="roadmap-status">Planned</span>
+                  <h4>Kids Bible</h4>
+                  <div class="subtitle">For Children</div>
+                </div>
+                <div class="roadmap-date">May 2027</div>
+              </div>
+
+              <!-- Node 5 -->
+              <div class="roadmap-node planned">
+                <div>
+                  <span class="roadmap-status">Planned</span>
+                  <h4>Reaching the LGBTQ Community with Love</h4>
+                  <div class="subtitle">Core Study</div>
+                </div>
+                <div class="roadmap-date">July 2027</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <!-- 3 & 5. MY MINISTRIES & WHATSAPP CHANNELS (DARK SECTION) -->
       <section class="ministries" id="ministries">
         <div class="wrap">
-          <span class="eyebrow">Outreach &amp; Spaces</span>
+          <span class="eyebrow">Outreach & Spaces</span>
           <h2 class="reveal">Building Foundations Across Media Frameworks</h2>
 
           <div class="ministries-grid">
             <!-- Ministry 1 -->
             <div class="ministry-item reveal">
-              <h3>Regen Life Ministries</h3>
+              <div class="ministry-identity">
+                <img src="rlm_logo.png" alt="Regen Life Ministries Logo" class="ministry-logo" />
+                <h3>Regen Life Ministries</h3>
+              </div>
               <p>
                 A Christ-centered initiative dedicated to helping people grow in the knowledge of God's Word. With a deep passion for teaching the Bible in a way that is simple, practical, and relevant, we reach people of all ages and backgrounds through books, videos, and digital content. Our heart is to make the truths of Scripture easy to understand and apply.
               </p>
-              <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029Vb296PtJJhzhUHYhtZ3P" target="_blank">
-                <span class="icon">💬</span> Join WhatsApp Channel
-              </a>
+              <div class="ministry-actions">
+                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029Vb296PtJJhzhUHYhtZ3P" target="_blank">
+                  <span class="icon">💬</span> Join WhatsApp Channel
+                </a>
+              </div>
             </div>
 
             <!-- Ministry 2 -->
             <div class="ministry-item reveal">
-              <h3>Tamil Kingdom Media</h3>
+              <div class="ministry-identity">
+                <img src="tkm_logo.jpg" alt="Tamil Kingdom Media Logo" class="ministry-logo" />
+                <h3>Tamil Kingdom Media</h3>
+              </div>
               <p>
                 Your space for faith, hope, and encouragement in Tamil! Every short video here carries a divine word of strength to lift your spirit, restore your faith, and remind you of God’s promises. Whether you’re going through challenges or seeking daily encouragement, you’ll find inspiration through Bible verses, motivational Tamil messages, and short stories that touch the heart.
               </p>
-              <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029VbC0ENB2UPBPiZi3AW2k" target="_blank">
-                <span class="icon">💬</span> Join WhatsApp Channel
-              </a>
+              <div class="ministry-actions">
+                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029VbC0ENB2UPBPiZi3AW2k" target="_blank">
+                  <span class="icon">💬</span> Join WhatsApp Channel
+                </a>
+                <a class="spotify-box" href="https://open.spotify.com/show/1j5cJQ22HwLNc8XWXZST0M" target="_blank">
+                  <span class="icon">🎙️</span> Listen on Spotify Podcast
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- NEW: LATEST REELS SECTION (WITH 9:16 LIVE MOBILE EMBEDS) -->
+      <section class="section" id="reels">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Featured Videos</span>
+            <h2>Latest Reels &amp; Messages</h2>
+            <p>Dive quickly into critical, high-impact truths. Click any card to load and play the video directly inside the mobile preview frame.</p>
+          </div>
+
+          <div class="reels-grid">
+            <!-- Reel 1 (RLM) -->
+            <div class="reel-card reveal">
+              <div class="reel-phone-wrapper reel-rlm" data-reel-id="DTNe7uIknOw" onclick="loadReel(this)">
+                <div class="reel-placeholder-content">
+                  <div class="reel-play-icon">▶</div>
+                  <span class="reel-badge">Regen Life Ministries</span>
+                </div>
+              </div>
+              <div class="reel-meta-info">
+                <h3>Why the Cross? – Reason 3</h3>
+                <p>Why did Jesus have to die on the Cross? Couldn’t God just forgive us without such pain? Give 3 minutes and gain eternal clarity.</p>
+                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTNe7uIknOw/" target="_blank">
+                  Open on Instagram →
+                </a>
+              </div>
+            </div>
+
+            <!-- Reel 2 (TKM) -->
+            <div class="reel-card reveal">
+              <div class="reel-phone-wrapper reel-tkm" data-reel-id="DTSj3-HD6rS" onclick="loadReel(this)">
+                <div class="reel-placeholder-content">
+                  <div class="reel-play-icon">▶</div>
+                  <span class="reel-badge">Tamil Kingdom Media</span>
+                </div>
+              </div>
+              <div class="reel-meta-info">
+                <h3>Destiny Activation | உன் வாழ்க்கை ஒரு விபத்து அல்ல</h3>
+                <p>Discover the blueprint and deep meaning woven directly into your timeline. Your life is not an accident—step into your true calling today.</p>
+                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTSj3-HD6rS/" target="_blank">
+                  Open on Instagram →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
 
       <!-- 4. SOCIAL MEDIA CONNECT MATRIX -->
       <section class="section" id="socials">
@@ -545,6 +960,34 @@
     </footer>
 
     <script>
+      // Lightweight, Dynamic On-Demand Instagram Embed Loader
+      function loadReel(element) {
+        const reelId = element.getAttribute('data-reel-id');
+        if (!reelId) return;
+
+        // Create a wrapper container for the iframe
+        const container = document.createElement('div');
+        container.className = 'reel-iframe-container';
+
+        // Construct standard Instagram Embed URL
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.instagram.com/reel/${reelId}/embed/`;
+        iframe.allowTransparency = "true";
+        iframe.allow = "encrypted-media";
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('scrolling', 'no');
+
+        container.appendChild(iframe);
+        
+        // Remove click event & placeholder styling
+        element.removeAttribute('onclick');
+        element.style.cursor = 'default';
+        
+        // Wipe original placeholder content and inject the real iframe cleanly
+        element.innerHTML = '';
+        element.appendChild(container);
+      }
+
       // Clean intersection observer framework logic for scroll reveal 
       const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
       const io = new IntersectionObserver((entries) => {
