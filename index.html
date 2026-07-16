@@ -47,7 +47,9 @@
         "https://youtube.com/@regenlifeministries",
         "https://instagram.com/regenlifeministries",
         "https://youtube.com/@tamilkingdommedia",
-        "https://instagram.com/tamilkingdommedia"
+        "https://instagram.com/tamilkingdommedia",
+        "https://x.com/itspkm",
+        "https://linkedin.com/in/praveenkprabakaran/"
       ],
       "description": "Praveen Kumar Moses is a software engineer, Bible teacher, and author focused on designing clear scriptural frameworks.",
       "brand": [
@@ -218,7 +220,7 @@
       .nav-cta:hover {
         background: var(--color-accent-hover);
       }
-      @media (max-width: 768px) {
+      @media (max-width: 820px) {
         nav.links { display: none; }
       }
 
@@ -296,6 +298,46 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+      }
+
+      /* Professional Mentorship Section Styling */
+      .pro-mentorship {
+        background: #f3f3f3;
+      }
+      .pro-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .pro-links-wrap {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+      }
+      .btn-cta-social {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--color-card-bg);
+        border: 1px solid var(--color-border);
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--color-text-dark);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      }
+      .btn-cta-social:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+        border-color: var(--color-accent);
+      }
+      .btn-cta-social .icon-svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
       }
 
       /* Sections General Layout */
@@ -520,11 +562,11 @@
       .reel-phone-wrapper {
         position: relative;
         width: 100%;
-        max-width: 320px; /* Restrict width so height scales naturally on desktop */
-        aspect-ratio: 9 / 16; /* Clean 9:16 mobile canvas */
+        max-width: 320px;
+        aspect-ratio: 9 / 16;
         background: #0d0d0d;
         border-radius: 24px;
-        border: 6px solid #1a1a1a; /* Sleek bezel frame design */
+        border: 6px solid #1a1a1a;
         box-shadow: 0 12px 36px rgba(0,0,0,0.15);
         overflow: hidden;
         cursor: pointer;
@@ -702,6 +744,7 @@
           PRAVEEN KUMAR MOSES
         </a>
         <nav class="links">
+          <a href="#professional">Professional</a>
           <a href="#books">My Books</a>
           <a href="#ministries">Ministries</a>
           <a href="#reels">Latest Reels</a>
@@ -734,6 +777,31 @@
             <div class="frame">
               <img src="profile_large.jpg" alt="Praveen Kumar Moses" class="big-photo" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- PROFESSIONAL DEVELOPMENT & MENTORSHIP SECTION -->
+      <section class="section pro-mentorship" id="professional">
+        <div class="wrap pro-grid">
+          <div class="section-head reveal" style="margin-bottom: 16px;">
+            <span class="eyebrow">Engineering & Growth</span>
+            <h2>Professional Mentorship</h2>
+            <p style="margin-top: 12px; font-size: 16px; line-height: 1.7;">
+              Connect with me on X and LinkedIn to explore software engineering, web development, AI, productivity strategies, and practical life lessons.
+            </p>
+          </div>
+          <div class="pro-links-wrap reveal">
+            <a class="btn-cta-social" href="https://x.com/itspkm" target="_blank" rel="noopener">
+              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Connect on X
+            </a>
+            <a class="btn-cta-social" href="https://linkedin.com/in/praveenkprabakaran/" target="_blank" rel="noopener">
+              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Connect on LinkedIn
+            </a>
           </div>
         </div>
       </section>
@@ -877,7 +945,7 @@
         </div>
       </section>
 
-      <!-- NEW: LATEST REELS SECTION (WITH 9:16 LIVE MOBILE EMBEDS) -->
+      <!-- 6. LATEST REELS SECTION -->
       <section class="section" id="reels">
         <div class="wrap">
           <div class="section-head reveal">
@@ -969,16 +1037,13 @@
     </footer>
 
     <script>
-      // Lightweight, Dynamic On-Demand Instagram Embed Loader
       function loadReel(element) {
         const reelId = element.getAttribute('data-reel-id');
         if (!reelId) return;
 
-        // Create a wrapper container for the iframe
         const container = document.createElement('div');
         container.className = 'reel-iframe-container';
 
-        // Construct standard Instagram Embed URL
         const iframe = document.createElement('iframe');
         iframe.src = `https://www.instagram.com/reel/${reelId}/embed/`;
         iframe.allowTransparency = "true";
@@ -988,16 +1053,13 @@
 
         container.appendChild(iframe);
         
-        // Remove click event & placeholder styling
         element.removeAttribute('onclick');
         element.style.cursor = 'default';
         
-        // Wipe original placeholder content and inject the real iframe cleanly
         element.innerHTML = '';
         element.appendChild(container);
       }
 
-      // Clean intersection observer framework logic for scroll reveal 
       const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
       const io = new IntersectionObserver((entries) => {
         entries.forEach((e) => {
