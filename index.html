@@ -1,1 +1,561 @@
-<h1>Welcome</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Praveen Kumar Moses — Author & Teacher</title>
+
+    <!-- Modern Retina SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+
+    <!-- Plus Jakarta Sans: Premium, High-Contrast Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --color-bg-light: #fafafa;
+        --color-bg-dark: #121212;
+        --color-card-bg: #ffffff;
+        --color-text-dark: #121212;
+        --color-text-light: #555555;
+        --color-text-inverse: #ffffff;
+        --color-text-muted: #888888;
+        --color-border: #eaeaea;
+        --color-accent: #000000;
+        --color-accent-hover: #333333;
+        --font-primary: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        --radius-card: 16px;
+        --radius-pill: 50px;
+        --maxw: 1140px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-primary);
+        background: var(--color-bg-light);
+        color: var(--color-text-dark);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Eyebrow Style */
+      .eyebrow {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--color-text-light);
+        margin-bottom: 16px;
+        display: inline-block;
+      }
+
+      h1, h2, h3, h4 {
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        line-height: 1.15;
+      }
+
+      /* Scroll Animation Utilities */
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal { opacity: 1; transform: none; transition: none; }
+      }
+
+      /* Header Navigation */
+      header.site {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(250, 250, 250, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--color-border);
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 24px;
+        max-width: var(--maxw);
+        margin: 0 auto;
+      }
+      .brand {
+        font-weight: 800;
+        font-size: 15px;
+        letter-spacing: -0.3px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid var(--color-border);
+      }
+      nav.links {
+        display: flex;
+        gap: 32px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-text-light);
+      }
+      nav.links a:hover {
+        color: var(--color-accent);
+      }
+      .nav-cta {
+        background: var(--color-accent);
+        color: var(--color-text-inverse);
+        padding: 10px 20px;
+        border-radius: var(--radius-pill);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: background 0.2s ease;
+      }
+      .nav-cta:hover {
+        background: var(--color-accent-hover);
+      }
+      @media (max-width: 768px) {
+        nav.links { display: none; }
+      }
+
+      /* Hero Section (Self Intro with Big Photo) */
+      .hero {
+        padding: 80px 0 100px;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 64px;
+        align-items: center;
+      }
+      @media (max-width: 880px) {
+        .hero-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+        .hero-actions { justify-content: center; }
+      }
+      .hero h1 {
+        font-size: clamp(38px, 5vw, 54px);
+        margin-bottom: 24px;
+      }
+      .hero h1 em {
+        font-style: normal;
+        border-bottom: 4px solid var(--color-accent);
+      }
+      .hero-sub {
+        font-size: 18px;
+        color: var(--color-text-light);
+        margin-bottom: 24px;
+        line-height: 1.7;
+      }
+      .hero-extra {
+        font-size: 16px;
+        color: var(--color-text-light);
+        margin-bottom: 36px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .btn-primary {
+        background: var(--color-accent);
+        color: var(--color-text-inverse);
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: background 0.2s;
+      }
+      .btn-primary:hover { background: var(--color-accent-hover); }
+      .btn-secondary {
+        border: 1px solid #cccccc;
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: border 0.2s, background 0.2s;
+      }
+      .btn-secondary:hover { border-color: var(--color-accent); background: #f0f0f0; }
+      
+      .hero-art .frame {
+        background: var(--color-card-bg);
+        border-radius: var(--radius-card);
+        padding: 24px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+        border: 1px solid var(--color-border);
+      }
+      .hero-art img.big-photo {
+        border-radius: calc(var(--radius-card) - 4px);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      /* Sections General Layout */
+      section.section { padding: 100px 0; }
+      .section-head { max-width: 640px; margin-bottom: 60px; }
+      .section-head h2 { font-size: clamp(28px, 4vw, 38px); margin-top: 8px; margin-bottom: 16px; }
+      .section-head p { color: var(--color-text-light); font-size: 17px; }
+
+      /* Books Section (Side-by-Side Cards Layout) */
+      .books-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+      @media (max-width: 768px) {
+        .books-grid { grid-template-columns: 1fr; }
+      }
+      .book-card {
+        background: var(--color-card-bg);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-card);
+        padding: 40px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .book-meta h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      .book-meta p {
+        color: var(--color-text-light);
+        font-size: 16px;
+        margin-bottom: 32px;
+        line-height: 1.65;
+      }
+      .book-btn {
+        display: inline-block;
+        text-align: center;
+        border: 2px solid var(--color-accent);
+        color: var(--color-text-dark);
+        font-weight: 700;
+        font-size: 13px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.2s;
+        align-self: flex-start;
+      }
+      .book-btn:hover {
+        background: var(--color-accent);
+        color: var(--color-text-inverse);
+      }
+
+      /* Ministries Section (Dark Mode Structural Blocks Pattern) */
+      .ministries {
+        background: var(--color-bg-dark);
+        color: var(--color-text-inverse);
+        padding: 100px 0;
+      }
+      .ministries .eyebrow { color: var(--color-text-muted); }
+      .ministries h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 48px; }
+      .ministries-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+        border-top: 1px solid #2a2a2a;
+        padding-top: 48px;
+      }
+      @media (max-width: 768px) {
+        .ministries-grid { grid-template-columns: 1fr; gap: 40px; }
+      }
+      .ministry-item h3 {
+        font-size: 22px;
+        letter-spacing: -0.3px;
+        color: var(--color-text-inverse);
+        margin-bottom: 16px;
+      }
+      .ministry-item p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #cccccc;
+        margin-bottom: 24px;
+      }
+
+      /* Channels Row Component Inside Dark Blocks */
+      .wa-channel-box {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        transition: background 0.2s;
+      }
+      .wa-channel-box:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+      .wa-channel-box span.icon {
+        font-size: 18px;
+      }
+
+      /* Connections Matrix (Social Links Channels) */
+      .socials-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      @media (max-width: 640px) {
+        .socials-grid { grid-template-columns: 1fr; }
+      }
+      .social-card {
+        background: var(--color-card-bg);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-card);
+        padding: 32px;
+      }
+      .social-card h3 {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+      .social-card .handle {
+        font-size: 14px;
+        color: var(--color-text-muted);
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .social-links-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .social-link-item {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 8px 16px;
+        background: #f0f0f0;
+        border-radius: 6px;
+        transition: background 0.2s, color 0.2s;
+      }
+      .social-link-item:hover {
+        background: var(--color-accent);
+        color: var(--color-text-inverse);
+      }
+
+      /* Site Footer */
+      footer.site {
+        border-top: 1px solid var(--color-border);
+        text-align: center;
+        padding: 40px 0;
+        font-size: 13px;
+        color: var(--color-text-muted);
+        background: var(--color-card-bg);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <div class="nav-inner">
+        <a class="brand" href="#top">
+          <img src="profile.jpg" alt="Praveen Kumar Moses Portrait" class="brand-avatar" />
+          PRAVEEN KUMAR MOSES
+        </a>
+        <nav class="links">
+          <a href="#books">My Books</a>
+          <a href="#ministries">Ministries</a>
+          <a href="#socials">Connect</a>
+        </nav>
+        <a class="nav-cta" href="#books">Explore Books</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- 1. SELF INTRO (HERO SECTION) -->
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Founder &amp; Teacher</span>
+            <h1>Hi, I'm <em>Praveen Kumar Moses</em>.</h1>
+            <p class="hero-sub">
+              I am a software engineer and Bible teacher with a deep passion for clarity and truth. My singular work is built around helping people discover deep structural scriptural roots while navigating life cleanly with an open mind.
+            </p>
+            <p class="hero-extra">
+              Through strategic framework designs and interactive content, I help modern everyday readers break past technical theological barriers to understand the scriptures plainly and accurately.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="#books">View My Books</a>
+              <a class="btn-secondary" href="#ministries">Our Ministries</a>
+            </div>
+          </div>
+
+          <div class="hero-art reveal">
+            <div class="frame">
+              <!-- Replace with a high-res image of yourself -->
+              <img src="profile_large.jpg" alt="Praveen Kumar Moses" class="big-photo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. MY BOOKS SECTION -->
+      <section class="section" id="books">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Published Works</span>
+            <h2>Books Designed for Clear Framework Processing</h2>
+            <p>Everyday reading structures engineered to bring quick clarity, clean historical setups, and high practical application directly to your hands.</p>
+          </div>
+
+          <div class="books-grid">
+            <!-- Book 1 -->
+            <div class="book-card reveal">
+              <div class="book-meta">
+                <h3>Bible — Made Easy for Everyone</h3>
+                <p>66 books, told like the story they actually are — in plain language, clear structure, and requiring no theology degree to complete framework understandings.</p>
+              </div>
+              <a class="book-btn" href="bible-made-easy-for-everyone.html" target="_blank">Explore Book</a>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-card reveal">
+              <div class="book-meta">
+                <h3>Love and Love Only</h3>
+                <p>A deep structural path built out cleanly to help everyday readers explore complex relationships, navigate recovery frameworks safely, and find true emotional sure-footedness.</p>
+              </div>
+              <a class="book-btn" href="love-and-love-only.html" target="_blank">Explore Book</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 & 5. MY MINISTRIES & WHATSAPP CHANNELS (DARK SECTION) -->
+      <section class="ministries" id="ministries">
+        <div class="wrap">
+          <span class="eyebrow">Outreach &amp; Spaces</span>
+          <h2 class="reveal">Building Foundations Across Media Frameworks</h2>
+
+          <div class="ministries-grid">
+            <!-- Ministry 1 -->
+            <div class="ministry-item reveal">
+              <h3>Regen Life Ministries</h3>
+              <p>
+                A Christ-centered initiative dedicated to helping people grow in the knowledge of God's Word. With a deep passion for teaching the Bible in a way that is simple, practical, and relevant, we reach people of all ages and backgrounds through books, videos, and digital content. Our heart is to make the truths of Scripture easy to understand and apply.
+              </p>
+              <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029Vb296PtJJhzhUHYhtZ3P" target="_blank">
+                <span class="icon">💬</span> Join WhatsApp Channel
+              </a>
+            </div>
+
+            <!-- Ministry 2 -->
+            <div class="ministry-item reveal">
+              <h3>Tamil Kingdom Media</h3>
+              <p>
+                Your space for faith, hope, and encouragement in Tamil! Every short video here carries a divine word of strength to lift your spirit, restore your faith, and remind you of God’s promises. Whether you’re going through challenges or seeking daily encouragement, you’ll find inspiration through Bible verses, motivational Tamil messages, and short stories that touch the heart.
+              </p>
+              <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029VbC0ENB2UPBPiZi3AW2k" target="_blank">
+                <span class="icon">💬</span> Join WhatsApp Channel
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SOCIAL MEDIA CONNECT MATRIX -->
+      <section class="section" id="socials">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Stay Connected</span>
+            <h2>Follow Our Communities Across Platforms</h2>
+            <p>Access regular short-form video releases, scriptural reminders, structural breakdowns, and real-time updates instantly.</p>
+          </div>
+
+          <div class="socials-grid">
+            <!-- Handle 1 -->
+            <div class="social-card reveal">
+              <h3>Regen Life Ministries</h3>
+              <span class="handle">@regenlifeministries</span>
+              <div class="social-links-wrap">
+                <a class="social-link-item" href="https://youtube.com/@regenlifeministries" target="_blank">YouTube</a>
+                <a class="social-link-item" href="https://instagram.com/regenlifeministries" target="_blank">Instagram</a>
+                <a class="social-link-item" href="https://facebook.com/@regenlifeministries" target="_blank">Facebook</a>
+                <a class="social-link-item" href="https://threads.net/@regenlifeministries" target="_blank">Threads</a>
+              </div>
+            </div>
+
+            <!-- Handle 2 -->
+            <div class="social-card reveal">
+              <h3>Tamil Kingdom Media</h3>
+              <span class="handle">@tamilkingdommedia</span>
+              <div class="social-links-wrap">
+                <a class="social-link-item" href="https://youtube.com/@tamilkingdommedia" target="_blank">YouTube</a>
+                <a class="social-link-item" href="https://instagram.com/tamilkingdommedia" target="_blank">Instagram</a>
+                <a class="social-link-item" href="https://facebook.com/@tamilkingdommedia" target="_blank">Facebook</a>
+                <a class="social-link-item" href="https://threads.net/@tamilkingdommedia" target="_blank">Threads</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      <div class="wrap">© 2026 Praveen Kumar Moses · All rights reserved</div>
+    </footer>
+
+    <script>
+      // Clean intersection observer framework logic for scroll reveal 
+      const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      }, observerOptions);
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
