@@ -14,15 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <!-- Primary SEO Meta Tags -->
-    <title>Praveen Kumar Moses — Bible Teacher & Author</title>
-    <meta name="description" content="Official website of Praveen Kumar Moses, software engineer, Bible teacher, and author. Explore plain-language theological frameworks, books, and ministries." />
-    <meta name="keywords" content="Praveen Kumar Moses, Praveen Kumar Moses Bible Teacher, Praveen Kumar Moses Bible Author, Bible Made Easy for Everyone, Love and Love Only, Regen Life Ministries, Tamil Kingdom Media" />
+    <title>Praveen Kumar Moses — Bible Teacher, Author & Founder</title>
+    <meta name="description" content="Official website of Praveen Kumar Moses, software engineer, Bible teacher, author, and founder of digital ministries and media spaces including Pixie Studios." />
+    <meta name="keywords" content="Praveen Kumar Moses, Bible Teacher, Author, Bible Made Easy for Everyone, Love and Love Only, Pixie Studios, Regen Life Ministries, Tamil Kingdom Media" />
     <link rel="canonical" href="https://praveenkumarmoses.github.io/" />
 
-    <!-- Open Graph / Facebook (For elegant social media sharing) -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Praveen Kumar Moses — Bible Teacher & Author" />
-    <meta property="og:description" content="Explore clear theological frameworks, books, and ministries by Praveen Kumar Moses." />
+    <meta property="og:title" content="Praveen Kumar Moses — Bible Teacher, Author & Founder" />
+    <meta property="og:description" content="Explore clear theological frameworks, digital initiatives, and media platforms by Praveen Kumar Moses." />
     <meta property="og:url" content="https://praveenkumarmoses.github.io/" />
     <meta property="og:image" content="https://praveenkumarmoses.github.io/profile_large.jpg" />
     <meta property="profile:first_name" content="Praveen" />
@@ -30,11 +30,11 @@
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Praveen Kumar Moses — Bible Teacher & Author" />
-    <meta name="twitter:description" content="Explore clear theological frameworks, books, and ministries by Praveen Kumar Moses." />
+    <meta name="twitter:title" content="Praveen Kumar Moses — Bible Teacher, Author & Founder" />
+    <meta name="twitter:description" content="Explore clear theological frameworks, digital initiatives, and media platforms by Praveen Kumar Moses." />
     <meta name="twitter:image" content="https://praveenkumarmoses.github.io/profile_large.jpg" />
 
-    <!-- Structured Data (JSON-LD Schema) — Tells Google exactly who you are -->
+    <!-- Structured Data (JSON-LD Schema) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,16 +42,24 @@
       "name": "Praveen Kumar Moses",
       "url": "https://praveenkumarmoses.github.io/",
       "image": "https://praveenkumarmoses.github.io/profile_large.jpg",
-      "jobTitle": ["Bible Teacher", "Author", "Software Engineer"],
+      "jobTitle": ["Bible Teacher", "Author", "Software Engineer", "Founder"],
       "sameAs": [
         "https://youtube.com/@regenlifeministries",
         "https://instagram.com/regenlifeministries",
         "https://youtube.com/@tamilkingdommedia",
         "https://instagram.com/tamilkingdommedia",
         "https://x.com/itspkm",
-        "https://linkedin.com/in/praveenkprabakaran/"
+        "https://linkedin.com/in/praveenkprabakaran/",
+        "https://www.instagram.com/its.pkm",
+        "https://www.threads.com/@its.pkm",
+        "https://www.youtube.com/@its_pkm",
+        "https://www.youtube.com/@PraveenKumarMoses",
+        "https://www.youtube.com/@pixiestudiosofficial",
+        "https://www.facebook.com/@pixiestudiosofficial",
+        "https://www.instagram.com/pixiestudiosofficial",
+        "https://www.threads.com/@pixiestudiosofficial"
       ],
-      "description": "Praveen Kumar Moses is a software engineer, Bible teacher, and author focused on designing clear scriptural frameworks.",
+      "description": "Praveen Kumar Moses is a software engineer, author, and founder focused on building clear scriptural and media discovery frameworks.",
       "brand": [
         {
           "@type": "Brand",
@@ -60,6 +68,10 @@
         {
           "@type": "Brand",
           "name": "Tamil Kingdom Media"
+        },
+        {
+          "@type": "Brand",
+          "name": "Pixie Studios"
         }
       ]
     }
@@ -310,9 +322,9 @@
         gap: 24px;
       }
       .pro-links-wrap {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
         gap: 16px;
-        flex-wrap: wrap;
         margin-top: 8px;
       }
       .btn-cta-social {
@@ -321,7 +333,7 @@
         gap: 10px;
         background: var(--color-card-bg);
         border: 1px solid var(--color-border);
-        padding: 12px 24px;
+        padding: 12px 20px;
         border-radius: 8px;
         font-weight: 700;
         font-size: 14px;
@@ -338,6 +350,7 @@
         width: 18px;
         height: 18px;
         fill: currentColor;
+        flex-shrink: 0;
       }
 
       /* Sections General Layout */
@@ -464,7 +477,7 @@
         padding-top: 10px;
       }
 
-      /* Ministries Section (Dark Mode Block) */
+      /* Ministries & Initiatives Section (Dark Mode Block) */
       .ministries {
         background: var(--color-bg-dark);
         color: var(--color-text-inverse);
@@ -474,10 +487,13 @@
       .ministries h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 32px; }
       .ministries-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
         border-top: 1px solid #2a2a2a;
         padding-top: 40px;
+      }
+      @media (max-width: 990px) {
+        .ministries-grid { grid-template-columns: repeat(2, 1fr); }
       }
       @media (max-width: 768px) {
         .ministries-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -502,8 +518,8 @@
         color: var(--color-text-inverse);
       }
       .ministry-item p {
-        font-size: 15px;
-        line-height: 1.65;
+        font-size: 14px;
+        line-height: 1.6;
         color: #cccccc;
         margin-bottom: 24px;
       }
@@ -515,7 +531,7 @@
       }
 
       /* Action Link Boxes */
-      .wa-channel-box, .spotify-box {
+      .wa-channel-box, .spotify-box, .generic-box {
         display: inline-flex;
         align-items: center;
         gap: 12px;
@@ -530,7 +546,7 @@
         width: 100%;
         max-width: 300px;
       }
-      .wa-channel-box:hover {
+      .wa-channel-box:hover, .generic-box:hover {
         background: rgba(255, 255, 255, 0.12);
       }
       .spotify-box:hover {
@@ -682,8 +698,11 @@
       /* Connections Matrix */
       .socials-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+      }
+      @media (max-width: 900px) {
+        .socials-grid { grid-template-columns: repeat(2, 1fr); }
       }
       @media (max-width: 640px) {
         .socials-grid { grid-template-columns: 1fr; }
@@ -744,9 +763,9 @@
           PRAVEEN KUMAR MOSES
         </a>
         <nav class="links">
-          <a href="#professional">Professional</a>
+          <a href="#professional">Mentorship</a>
           <a href="#books">My Books</a>
-          <a href="#ministries">Ministries</a>
+          <a href="#ministries">Ministries &amp; Spaces</a>
           <a href="#reels">Latest Reels</a>
           <a href="#socials">Connect</a>
         </nav>
@@ -759,17 +778,17 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy reveal">
-            <span class="eyebrow">Founder & Teacher</span>
+            <span class="eyebrow">Founder, Teacher &amp; Engineer</span>
             <h1>Hi, I'm <em>Praveen Kumar Moses</em>.</h1>
             <p class="hero-sub">
-              I am a software engineer and Bible teacher with a deep passion for clarity and truth. My singular work is built around helping people discover deep structural scriptural roots while navigating life cleanly with an open mind.
+              I am a software engineer, Bible teacher, and framework designer with a deep passion for clarity and truth. My singular work is built around helping people discover deep structural scriptural roots while navigating life cleanly with an open mind.
             </p>
             <p class="hero-extra">
-              Through strategic framework designs and interactive content, I help modern everyday readers break past technical theological barriers to understand the scriptures plainly and accurately.
+              Through strategic media layout architectures, narrative framework designs, and interactive content, I help modern readers and families build strong moral and spiritual foundations effortlessly.
             </p>
             <div class="hero-actions">
               <a class="btn-primary" href="#books">View My Books</a>
-              <a class="btn-secondary" href="#ministries">Our Ministries</a>
+              <a class="btn-secondary" href="#ministries">Our Foundations</a>
             </div>
           </div>
 
@@ -787,20 +806,42 @@
       <section class="section pro-mentorship" id="professional">
         <div class="wrap pro-grid">
           <div class="section-head reveal" style="margin-bottom: 16px;">
-            <span class="eyebrow">Engineering & Growth</span>
-            <h2>Professional Mentorship</h2>
+            <span class="eyebrow">Personal, Professional &amp; Practical Growth</span>
+            <h2>Professional Mentorship &amp; Life Lessons</h2>
             <p style="margin-top: 12px; font-size: 16px; line-height: 1.7;">
-              Connect with me on X and LinkedIn to explore software engineering, web development, AI, productivity strategies, and practical life lessons.
+              Connect with me directly on my personal channels to explore software engineering, web development, AI, productivity blueprints, and practical framework strategies designed to streamline your day-to-day timeline.
             </p>
           </div>
           <div class="pro-links-wrap reveal">
+            <!-- X -->
             <a class="btn-cta-social" href="https://x.com/itspkm" target="_blank" rel="noopener">
               <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              Connect on X
+              Follow on X
             </a>
+            <!-- LinkedIn -->
             <a class="btn-cta-social" href="https://linkedin.com/in/praveenkprabakaran/" target="_blank" rel="noopener">
               <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               Connect on LinkedIn
+            </a>
+            <!-- Instagram (Personal) -->
+            <a class="btn-cta-social" href="https://www.instagram.com/its.pkm" target="_blank" rel="noopener">
+              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              Instagram (@its.pkm)
+            </a>
+            <!-- Threads -->
+            <a class="btn-cta-social" href="https://www.threads.net/@its.pkm" target="_blank" rel="noopener">
+              <span style="font-size: 18px; line-height: 1;">🧵</span>
+              Threads (@its.pkm)
+            </a>
+            <!-- YouTube Personal 1 -->
+            <a class="btn-cta-social" href="https://www.youtube.com/@its_pkm" target="_blank" rel="noopener">
+              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube (@its_pkm)
+            </a>
+            <!-- YouTube Personal 2 -->
+            <a class="btn-cta-social" href="https://www.youtube.com/@PraveenKumarMoses" target="_blank" rel="noopener">
+              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube (@PraveenKumarMoses)
             </a>
           </div>
         </div>
@@ -900,10 +941,10 @@
         </div>
       </section>
 
-      <!-- 3 & 5. MY MINISTRIES & WHATSAPP CHANNELS (DARK SECTION) -->
+      <!-- 3 & 5. MY MINISTRIES & CORE INITIATIVES (DARK SECTION) -->
       <section class="ministries" id="ministries">
         <div class="wrap">
-          <span class="eyebrow">Outreach & Spaces</span>
+          <span class="eyebrow">Outreach &amp; Creative Spaces</span>
           <h2 class="reveal">Building Foundations Across Media Frameworks</h2>
 
           <div class="ministries-grid">
@@ -938,6 +979,22 @@
                 </a>
                 <a class="spotify-box" href="https://open.spotify.com/show/1j5cJQ22HwLNc8XWXZST0M" target="_blank">
                   <span class="icon">🎙️</span> Listen on Spotify Podcast
+                </a>
+              </div>
+            </div>
+
+            <!-- Initiative 3: Pixie Studios -->
+            <div class="ministry-item reveal">
+              <div class="ministry-identity">
+                <img src="pixie_logo.png" alt="Pixie Studios Logo" class="ministry-logo" />
+                <h3>Pixie Studios</h3>
+              </div>
+              <p>
+                Sharing heart-touching Tamil moral stories and emotional short films that inspire kindness, hope, and empathy. We bring meaningful stories about animals, children, and everyday life lessons — told in Tamil with clear captions and universal emotion. Our goal is to move hearts, spark thought, and remind children and families that goodness still exists.
+              </p>
+              <div class="ministry-actions">
+                <a class="generic-box" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank">
+                  <span class="icon">▶️</span> Watch on YouTube Channel
                 </a>
               </div>
             </div>
@@ -994,13 +1051,29 @@
 
       <hr class="section-divider" />
 
+      <!-- STANDALONE PODCAST SECTION -->
+      <section class="section" id="podcast" style="background: #fdfdfd;">
+        <div class="wrap">
+          <div class="section-head reveal" style="max-width: 640px; margin: 0 auto 32px; text-align: center;">
+            <span class="eyebrow">Audio Teaching</span>
+            <h2>Tamil Kingdom Media Podcast</h2>
+            <p>Listen to daily audio inspiration, motivational biblical messages, and deep scriptural studies right here.</p>
+          </div>
+          <div class="reveal" style="max-width: 700px; margin: 0 auto;">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/1j5cJQ22HwLNc8XWXZST0M?utm_source=generator&theme=0&si=77bc1624b4d844f5" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
       <!-- 4. SOCIAL MEDIA CONNECT MATRIX -->
       <section class="section" id="socials">
         <div class="wrap">
           <div class="section-head reveal">
             <span class="eyebrow">Stay Connected</span>
             <h2>Follow Our Communities Across Platforms</h2>
-            <p>Access regular short-form video releases, scriptural reminders, structural breakdowns, and real-time updates instantly.</p>
+            <p>Access regular short-form video releases, moral storytelling, scriptural breakdowns, and ecosystem updates instantly.</p>
           </div>
 
           <div class="socials-grid">
@@ -1025,6 +1098,18 @@
                 <a class="social-link-item" href="https://instagram.com/tamilkingdommedia" target="_blank">Instagram</a>
                 <a class="social-link-item" href="https://facebook.com/@tamilkingdommedia" target="_blank">Facebook</a>
                 <a class="social-link-item" href="https://threads.net/@tamilkingdommedia" target="_blank">Threads</a>
+              </div>
+            </div>
+
+            <!-- Handle 3: Pixie Studios -->
+            <div class="social-card reveal">
+              <h3>Pixie Studios Official</h3>
+              <span class="handle">@pixiestudiosofficial</span>
+              <div class="social-links-wrap">
+                <a class="social-link-item" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank">YouTube</a>
+                <a class="social-link-item" href="https://www.facebook.com/@pixiestudiosofficial" target="_blank">Facebook</a>
+                <a class="social-link-item" href="https://www.instagram.com/pixiestudiosofficial" target="_blank">Instagram</a>
+                <a class="social-link-item" href="https://www.threads.net/@pixiestudiosofficial" target="_blank">Threads</a>
               </div>
             </div>
           </div>
