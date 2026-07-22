@@ -36,9 +36,14 @@
     <meta name="twitter:description" content="Discover the distinct difference between modern attachment and a permanent, stable, unconditional foundation." />
     <meta name="twitter:image" content="https://www.praveenkumarmoses.in/mybooks/love_and_love_only_cover.jpg" />
 
-    <!-- Favicon Configuration -->
-    <link rel="icon" href="profile.jpg" type="image/jpeg" />
-    <link rel="apple-touch-icon" href="profile.jpg" />
+    <!-- Google-Compliant Favicon & Profile Icon Set -->
+    <link rel="icon" type="image/x-icon" href="https://www.praveenkumarmoses.in/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="https://www.praveenkumarmoses.in/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.praveenkumarmoses.in/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.praveenkumarmoses.in/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.praveenkumarmoses.in/apple-touch-icon.png" />
+    <link rel="manifest" href="https://www.praveenkumarmoses.in/site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
 
     <!-- Schema.org JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -67,22 +72,46 @@
           "description": "Discover the distinct difference between modern attachment and a permanent, stable, unconditional foundation. Step into emotional healing and lasting clarity.",
           "genre": "Relationships, Emotional Healing, Spiritual Growth",
           "inLanguage": "en",
-          "offers": [
+          "workExample": [
             {
-              "@type": "Offer",
-              "price": "349",
-              "priceCurrency": "INR",
-              "availability": "https://schema.org/InStock",
-              "url": "https://www.amazon.in/dp/B0GY42HWFZ",
-              "category": "Paperback Edition"
+              "@type": "Book",
+              "bookFormat": "https://schema.org/Paperback",
+              "isbn": "97898904317546",
+              "offers": [
+                {
+                  "@type": "Offer",
+                  "price": "349",
+                  "priceCurrency": "INR",
+                  "availability": "https://schema.org/InStock",
+                  "url": "https://www.amazon.in/dp/B0GY42HWFZ"
+                }
+              ]
             },
             {
-              "@type": "Offer",
-              "price": "599",
-              "priceCurrency": "INR",
-              "availability": "https://schema.org/InStock",
-              "url": "https://www.amazon.in/dp/B0GY3VTV4N",
-              "category": "Hardcover Edition"
+              "@type": "Book",
+              "bookFormat": "https://schema.org/Hardcover",
+              "isbn": "97898904317553",
+              "offers": [
+                {
+                  "@type": "Offer",
+                  "price": "599",
+                  "priceCurrency": "INR",
+                  "availability": "https://schema.org/InStock",
+                  "url": "https://www.amazon.in/dp/B0GY3VTV4N"
+                }
+              ]
+            },
+            {
+              "@type": "Book",
+              "bookFormat": "https://schema.org/EBook",
+              "offers": [
+                {
+                  "@type": "Offer",
+                  "priceCurrency": "INR",
+                  "availability": "https://schema.org/InStock",
+                  "url": "https://www.amazon.in/dp/B0GX3114NX"
+                }
+              ]
             }
           ]
         }
@@ -90,7 +119,7 @@
     }
     </script>
 
-    <!-- Plus Jakarta Sans: Premium, High-Contrast Typography -->
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -147,7 +176,6 @@
         padding: 0 24px;
       }
 
-      /* Eyebrow Style */
       .eyebrow {
         font-size: 11px;
         font-weight: 700;
@@ -164,7 +192,7 @@
         line-height: 1.15;
       }
 
-      /* Scroll Animation Utilities */
+      /* Scroll Animation */
       .reveal {
         opacity: 0;
         transform: translateY(20px);
@@ -280,6 +308,7 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
         transition: background 0.2s;
+        display: inline-block;
       }
       .btn-primary:hover { background: var(--color-accent-hover); }
       .btn-secondary {
@@ -291,6 +320,7 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
         transition: border 0.2s, background 0.2s;
+        display: inline-block;
       }
       .btn-secondary:hover { border-color: var(--color-accent); background: #f0f0f0; }
       
@@ -324,7 +354,7 @@
         width: 100%;
       }
 
-      /* Structural Blocks Style (Identity Pattern) */
+      /* Structural Dark Section */
       .ache {
         background: var(--color-bg-dark);
         color: var(--color-text-inverse);
@@ -375,7 +405,7 @@
         font-size: 16px;
       }
 
-      /* Sections & Modern Card Grid Systems */
+      /* Standard Sections */
       section.section { padding: 100px 0; }
       .section-head { max-width: 640px; margin-bottom: 60px; }
       .section-head h2 { font-size: clamp(28px, 4vw, 38px); margin-top: 8px; margin-bottom: 16px; }
@@ -400,7 +430,7 @@
       .imagine-card h3 { font-size: 20px; margin-bottom: 12px; }
       .imagine-card p { color: var(--color-text-light); font-size: 15px; }
 
-      /* Cross Segment Layout Split Components */
+      /* Differentiator Row */
       .diff { background: var(--color-card-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
       .diff-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
       @media (max-width: 880px) { .diff-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -415,7 +445,7 @@
       .diff-item h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
       .diff-item p { font-size: 14px; color: var(--color-text-light); }
 
-      /* Interface Tab Navigation Modules */
+      /* Tabs System */
       .tabs { display: flex; gap: 24px; margin-bottom: 40px; border-bottom: 1px solid var(--color-border); }
       .tab-btn {
         font-family: var(--font-primary);
@@ -430,6 +460,7 @@
         transition: all 0.2s;
       }
       .tab-btn.active { color: var(--color-accent); border-bottom-color: var(--color-accent); }
+      .tab-btn:focus-visible { outline: 2px solid var(--color-accent); }
       .tab-panel { display: none; }
       .tab-panel.active { display: block; }
 
@@ -520,7 +551,7 @@
         font-size: 15px;
       }
 
-      /* Final Call to Action Section Layout */
+      /* Final CTA */
       .final-cta { text-align: center; padding: 120px 0; background: var(--color-card-bg); }
       .final-cta h2 { font-size: clamp(32px, 5vw, 46px); max-width: 20ch; margin: 0 auto 24px; }
       .final-cta p { color: var(--color-text-light); font-size: 18px; margin-bottom: 40px; }
@@ -539,10 +570,10 @@
     <header class="site">
       <div class="nav-inner">
         <a class="brand" href="#top">
-          <img src="profile.jpg" alt="Praveen Kumar Moses Portrait" class="brand-avatar" />
+          <img src="/mybooks/profile.jpg" alt="Praveen Kumar Moses" class="brand-avatar" />
           LOVE AND LOVE ONLY
         </a>
-        <nav class="links">
+        <nav class="links" aria-label="Main Navigation">
           <a href="#confusion">The Confusion</a>
           <a href="#healing">The Journey</a>
           <a href="#formats">Formats</a>
@@ -575,7 +606,7 @@
 
           <div class="hero-art reveal">
             <div class="frame">
-              <img src="love_and_love_only_cover.jpg" alt="Love and Love Only book cover" />
+              <img src="/mybooks/love_and_love_only_cover.jpg" alt="Love and Love Only book cover" width="600" height="900" />
             </div>
           </div>
         </div>
@@ -679,12 +710,12 @@
             <p>Select your favorite platform below to get print editions or immediate digital formats.</p>
           </div>
 
-          <div class="tabs reveal">
-            <button class="tab-btn active" data-tab="print">Print Editions</button>
-            <button class="tab-btn" data-tab="digital">Digital Formats</button>
+          <div class="tabs reveal" role="tablist" aria-label="Format Options">
+            <button class="tab-btn active" id="tab-print" role="tab" aria-selected="true" aria-controls="panel-print" data-tab="panel-print">Print Editions</button>
+            <button class="tab-btn" id="tab-digital" role="tab" aria-selected="false" aria-controls="panel-digital" data-tab="panel-digital">Digital Formats</button>
           </div>
 
-          <div class="tab-panel active" id="print">
+          <div class="tab-panel active" id="panel-print" role="tabpanel" aria-labelledby="tab-print">
             <div class="format-group reveal">
               <h4>Paperback &amp; Hardcover</h4>
               <div class="buy-grid">
@@ -739,9 +770,9 @@
             </div>
           </div>
 
-          <div class="tab-panel" id="digital">
+          <div class="tab-panel" id="panel-digital" role="tabpanel" aria-labelledby="tab-digital">
             <div class="format-group reveal">
-              <h4>Android Devices</h4>
+              <h4>Android &amp; General Digital</h4>
               <div class="buy-grid">
                 <div class="buy-card">
                   <span class="vendor">Amazon Kindle India</span>
@@ -772,7 +803,7 @@
             </div>
 
             <div class="format-group reveal" style="margin-top: 40px;">
-              <h4>iOS Devices</h4>
+              <h4>iOS &amp; Apple Devices</h4>
               <div class="buy-grid">
                 <div class="buy-card">
                   <span class="vendor">Amazon Kindle India</span>
@@ -799,7 +830,7 @@
         <div class="wrap">
           <div class="author-grid reveal">
             <div class="author-avatar-container">
-              <img src="profile.jpg" alt="Praveen Kumar Moses" class="author-avatar" />
+              <img src="/mybooks/profile.jpg" alt="Praveen Kumar Moses" class="author-avatar" width="220" height="220" />
             </div>
             <div>
               <span class="role">About the Author</span>
@@ -815,7 +846,7 @@
         </div>
       </section>
 
-      <!-- FINAL CORE CALL TO ACTION -->
+      <!-- FINAL CALL TO ACTION -->
       <section class="final-cta">
         <div class="wrap">
           <span class="eyebrow">Step into Healing</span>
@@ -831,7 +862,7 @@
     </footer>
 
     <script>
-      // Clean intersection observer framework logic for scroll reveal 
+      // Intersection Observer for scroll animations
       const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
       const io = new IntersectionObserver((entries) => {
         entries.forEach((e) => {
@@ -843,13 +874,24 @@
       }, observerOptions);
       document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-      // Modern Tab System controller logic
-      document.querySelectorAll(".tab-btn").forEach((btn) => {
+      // Tab controller with accessibility support
+      const tabBtns = document.querySelectorAll(".tab-btn");
+      const tabPanels = document.querySelectorAll(".tab-panel");
+
+      tabBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
-          document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
-          document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
+          tabBtns.forEach((b) => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          tabPanels.forEach((p) => p.classList.remove("active"));
+
           btn.classList.add("active");
-          document.getElementById(btn.dataset.tab).classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+          const targetPanel = document.getElementById(btn.dataset.tab);
+          if (targetPanel) {
+            targetPanel.classList.add("active");
+          }
         });
       });
     </script>

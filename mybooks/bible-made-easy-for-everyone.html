@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HX5V3DHR19"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-HX5V3DHR19');
-	</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HX5V3DHR19"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HX5V3DHR19');
+    </script>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
@@ -21,9 +21,12 @@
     <link rel="canonical" href="https://www.praveenkumarmoses.in/mybooks/bible-made-easy-for-everyone.html" />
 
     <!-- Google-Compliant Favicon & Profile Icon Set -->
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="https://www.praveenkumarmoses.in/profile.jpg" />
-    <link rel="icon" type="image/jpeg" sizes="500x500" href="https://www.praveenkumarmoses.in/profile_large.jpg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.praveenkumarmoses.in/profile_large.jpg" />
+    <link rel="icon" type="image/x-icon" href="https://www.praveenkumarmoses.in/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="https://www.praveenkumarmoses.in/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.praveenkumarmoses.in/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.praveenkumarmoses.in/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.praveenkumarmoses.in/apple-touch-icon.png" />
+    <link rel="manifest" href="https://www.praveenkumarmoses.in/site.webmanifest" />
 
     <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
     <meta property="og:type" content="book" />
@@ -65,12 +68,26 @@
             {
               "@type": "Book",
               "bookFormat": "https://schema.org/Paperback",
-              "isbn": "9798899612039"
+              "isbn": "9798899612039",
+              "offers": {
+                "@type": "Offer",
+                "price": "2990.00",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.amazon.in/dp/B0FCSHYM7P/"
+              }
             },
             {
               "@type": "Book",
               "bookFormat": "https://schema.org/Hardcover",
-              "isbn": "9798899612053"
+              "isbn": "9798899612053",
+              "offers": {
+                "@type": "Offer",
+                "price": "3290.00",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.amazon.in/dp/B0FCSMQ4X3/"
+              }
             },
             {
               "@type": "Book",
@@ -95,7 +112,7 @@
     }
     </script>
 
-    <!-- Plus Jakarta Sans: Premium, High-Contrast Typography -->
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -152,7 +169,6 @@
         padding: 0 24px;
       }
 
-      /* Eyebrow Style */
       .eyebrow {
         font-size: 11px;
         font-weight: 700;
@@ -169,7 +185,6 @@
         line-height: 1.15;
       }
 
-      /* Scroll Animation Utilities */
       .reveal {
         opacity: 0;
         transform: translateY(20px);
@@ -183,7 +198,6 @@
         .reveal { opacity: 1; transform: none; transition: none; }
       }
 
-      /* Header Navigation */
       header.site {
         position: sticky;
         top: 0;
@@ -243,7 +257,6 @@
         nav.links { display: none; }
       }
 
-      /* Hero Section */
       .hero {
         padding: 80px 0 60px;
       }
@@ -329,7 +342,6 @@
         width: 100%;
       }
 
-      /* Structural Blocks Style */
       .ache {
         background: var(--color-bg-dark);
         color: var(--color-text-inverse);
@@ -380,7 +392,6 @@
         font-size: 16px;
       }
 
-      /* Sections & Modern Card Grid Systems */
       section.section { padding: 100px 0; }
       .section-head { max-width: 640px; margin-bottom: 60px; }
       .section-head h2 { font-size: clamp(28px, 4vw, 38px); margin-top: 8px; margin-bottom: 16px; }
@@ -405,7 +416,6 @@
       .imagine-card h3 { font-size: 20px; margin-bottom: 12px; }
       .imagine-card p { color: var(--color-text-light); font-size: 15px; }
 
-      /* Cross Segment Layout Split Components */
       .diff { background: var(--color-card-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
       .diff-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
       @media (max-width: 880px) { .diff-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -420,7 +430,6 @@
       .diff-item h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
       .diff-item p { font-size: 14px; color: var(--color-text-light); }
 
-      /* Interface Tab Navigation Modules */
       .tabs { display: flex; gap: 24px; margin-bottom: 40px; border-bottom: 1px solid var(--color-border); }
       .tab-btn {
         font-family: var(--font-primary);
@@ -485,7 +494,6 @@
       }
       .buy-link:hover { background: var(--color-accent-hover); }
 
-      /* Author Section Layout */
       .author { background: var(--color-bg-dark); color: var(--color-text-inverse); padding: 120px 0; }
       .author-grid {
         display: grid;
@@ -525,7 +533,6 @@
         font-size: 15px;
       }
 
-      /* Final Call to Action Section Layout */
       .final-cta { text-align: center; padding: 120px 0; background: var(--color-card-bg); }
       .final-cta h2 { font-size: clamp(32px, 5vw, 46px); max-width: 20ch; margin: 0 auto 24px; }
       .final-cta p { color: var(--color-text-light); font-size: 18px; margin-bottom: 40px; }
@@ -544,7 +551,7 @@
     <header class="site">
       <div class="nav-inner">
         <a class="brand" href="https://www.praveenkumarmoses.in/">
-          <img src="../profile.jpg" alt="Praveen Kumar Moses Portrait" class="brand-avatar" />
+          <img src="/profile.jpg" alt="Praveen Kumar Moses Portrait" class="brand-avatar" />
           BIBLE, MADE EASY
         </a>
         <nav class="links">
@@ -684,12 +691,12 @@
             <p>Paperback, hardcover, ebook, or audiobook — identical content matching how you prefer to learn.</p>
           </div>
 
-          <div class="tabs reveal">
-            <button class="tab-btn active" data-tab="print">Print Editions</button>
-            <button class="tab-btn" data-tab="digital">Digital Formats</button>
+          <div class="tabs reveal" role="tablist">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="print" data-tab="print">Print Editions</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="digital" data-tab="digital">Digital Formats</button>
           </div>
 
-          <div class="tab-panel active" id="print">
+          <div class="tab-panel active" id="print" role="tabpanel">
             <div class="format-group reveal">
               <h4>Paperback &amp; Hardcover</h4>
               <div class="buy-grid">
@@ -697,11 +704,11 @@
                   <span class="vendor">Amazon India</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Paperback</span><span class="price">₹2,990</span></div>
-                    <a class="buy-link" href="https://www.amazon.in/dp/B0FCSHYM7P/" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.in/dp/B0FCSHYM7P/" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Hardcover</span><span class="price">₹3,290</span></div>
-                    <a class="buy-link" href="https://www.amazon.in/dp/B0FCSMQ4X3/" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.in/dp/B0FCSMQ4X3/" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
 
@@ -709,11 +716,11 @@
                   <span class="vendor">Amazon Global</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Paperback</span><span class="price">$24.99</span></div>
-                    <a class="buy-link" href="https://www.amazon.com/dp/B0F7971SZ5" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.com/dp/B0F7971SZ5" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Hardcover</span><span class="price">$64.18</span></div>
-                    <a class="buy-link" href="https://www.amazon.com/dp/B0F79WYMPM" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.com/dp/B0F79WYMPM" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
 
@@ -721,11 +728,11 @@
                   <span class="vendor">Flipkart</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Paperback</span><span class="price">₹2,990</span></div>
-                    <a class="buy-link" href="https://www.flipkart.com/bible-made-easy-everyone/p/itma861e57b8c77b?pid=9798899612039" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.flipkart.com/bible-made-easy-everyone/p/itma861e57b8c77b?pid=9798899612039" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Hardcover</span><span class="price">₹3,290</span></div>
-                    <a class="buy-link" href="https://www.flipkart.com/bible-made-easy-everyone/p/itma861e57b8c77b?pid=9798899612053" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.flipkart.com/bible-made-easy-everyone/p/itma861e57b8c77b?pid=9798899612053" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
 
@@ -733,18 +740,18 @@
                   <span class="vendor">Notion Press</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Paperback</span><span class="price">₹2,990</span></div>
-                    <a class="buy-link" href="https://direct.notionpress.com/in/read/bible-made-easy-for-everyone/paperback" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://direct.notionpress.com/in/read/bible-made-easy-for-everyone/paperback" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Hardcover</span><span class="price">₹3,290</span></div>
-                    <a class="buy-link" href="https://direct.notionpress.com/in/read/bible-made-easy-for-everyone-hardcover/hardcover" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://direct.notionpress.com/in/read/bible-made-easy-for-everyone-hardcover/hardcover" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="tab-panel" id="digital">
+          <div class="tab-panel" id="digital" role="tabpanel">
             <div class="format-group reveal">
               <h4>Android Devices</h4>
               <div class="buy-grid">
@@ -752,25 +759,25 @@
                   <span class="vendor">Amazon Kindle India</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Ebook Edition</span></div>
-                    <a class="buy-link" href="https://www.amazon.in/dp/B0F74NXFLP" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.in/dp/B0F74NXFLP" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
                 <div class="buy-card">
                   <span class="vendor">Amazon Kindle Global</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Ebook Edition</span></div>
-                    <a class="buy-link" href="https://www.amazon.com/dp/B0F74NXFLP" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.com/dp/B0F74NXFLP" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
                 <div class="buy-card">
                   <span class="vendor">Google Play Channels</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Digital Ebook</span></div>
-                    <a class="buy-link" href="https://play.google.com/store/books/details?id=CodlEQAAQBAJ" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://play.google.com/store/books/details?id=CodlEQAAQBAJ" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Digital Audiobook</span></div>
-                    <a class="buy-link" href="https://play.google.com/store/audiobooks/details?id=AQAAAEDK3RydxM" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://play.google.com/store/audiobooks/details?id=AQAAAEDK3RydxM" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
               </div>
@@ -783,14 +790,14 @@
                   <span class="vendor">Amazon Kindle India</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Ebook Edition</span></div>
-                    <a class="buy-link" href="https://www.amazon.in/dp/B0F74NXFLP" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.in/dp/B0F74NXFLP" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
                 <div class="buy-card">
                   <span class="vendor">Amazon Kindle Global</span>
                   <div class="buy-row">
                     <div class="buy-meta"><span class="fmt">Ebook Edition</span></div>
-                    <a class="buy-link" href="https://www.amazon.com/dp/B0F74NXFLP" target="_blank">Buy Now</a>
+                    <a class="buy-link" href="https://www.amazon.com/dp/B0F74NXFLP" target="_blank" rel="noopener">Buy Now</a>
                   </div>
                 </div>
               </div>
@@ -804,7 +811,7 @@
         <div class="wrap">
           <div class="author-grid reveal">
             <div class="author-avatar-container">
-              <img src="../profile.jpg" alt="Praveen Kumar Moses" class="author-avatar" />
+              <img src="/profile.jpg" alt="Praveen Kumar Moses" class="author-avatar" />
             </div>
             <div>
               <span class="role">About the Author</span>
@@ -820,7 +827,7 @@
         </div>
       </section>
 
-      <!-- FINAL CORE CALL TO ACTION -->
+      <!-- FINAL CALL TO ACTION -->
       <section class="final-cta">
         <div class="wrap">
           <span class="eyebrow">Ready When You Are</span>
@@ -849,9 +856,13 @@
 
       document.querySelectorAll(".tab-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
-          document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
+          document.querySelectorAll(".tab-btn").forEach((b) => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
           document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
           btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
           document.getElementById(btn.dataset.tab).classList.add("active");
         });
       });
