@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HX5V3DHR19"></script>
@@ -14,9 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <!-- Primary SEO Meta Tags -->
-    <title>Praveen Kumar Moses — Bible Teacher, Author & Software Engineer</title>
+    <title>Praveen Kumar Moses — Bible Teacher, Author &amp; Software Engineer</title>
+    <meta name="title" content="Praveen Kumar Moses — Bible Teacher, Author &amp; Software Engineer" />
     <meta name="description" content="Official website of Praveen Kumar Moses, software engineer, Bible teacher, author, and founder of digital ministries and media spaces including Pixie Studios." />
     <meta name="keywords" content="Praveen Kumar Moses, Bible Teacher, Author, Software Engineer, Bible Made Easy for Everyone, Love and Love Only, Pixie Studios, Regen Life Ministries, Tamil Kingdom Media" />
+    <meta name="author" content="Praveen Kumar Moses" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://www.praveenkumarmoses.in/" />
 
@@ -30,7 +32,8 @@
 
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Praveen Kumar Moses — Bible Teacher, Author & Software Engineer" />
+    <meta property="og:site_name" content="Praveen Kumar Moses" />
+    <meta property="og:title" content="Praveen Kumar Moses — Bible Teacher, Author &amp; Software Engineer" />
     <meta property="og:description" content="Explore clear theological frameworks, digital initiatives, and media platforms by Praveen Kumar Moses." />
     <meta property="og:url" content="https://www.praveenkumarmoses.in/" />
     <meta property="og:image" content="https://www.praveenkumarmoses.in/praveen-kumar-moses.png" />
@@ -38,14 +41,24 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Praveen Kumar Moses Portrait" />
     <meta property="profile:first_name" content="Praveen" />
     <meta property="profile:last_name" content="Moses" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Praveen Kumar Moses — Bible Teacher, Author & Software Engineer" />
+    <meta name="twitter:site" content="@itspkm" />
+    <meta name="twitter:creator" content="@itspkm" />
+    <meta name="twitter:title" content="Praveen Kumar Moses — Bible Teacher, Author &amp; Software Engineer" />
     <meta name="twitter:description" content="Explore clear theological frameworks, digital initiatives, and media platforms by Praveen Kumar Moses." />
     <meta name="twitter:image" content="https://www.praveenkumarmoses.in/praveen-kumar-moses.png" />
+    <meta name="twitter:image:alt" content="Praveen Kumar Moses Portrait" />
+
+    <!-- Performance Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
 
     <!-- Enhanced Technical Structured Data (JSON-LD Schema) -->
     <script type="application/ld+json">
@@ -57,9 +70,19 @@
           "@id": "https://www.praveenkumarmoses.in/#webpage",
           "url": "https://www.praveenkumarmoses.in/",
           "name": "Praveen Kumar Moses — Official Profile",
+          "isPartOf": {
+            "@id": "https://www.praveenkumarmoses.in/#website"
+          },
+          "about": {
+            "@id": "https://www.praveenkumarmoses.in/#person"
+          },
           "mainEntity": {
             "@id": "https://www.praveenkumarmoses.in/#person"
-          }
+          },
+          "primaryImageOfPage": {
+            "@id": "https://www.praveenkumarmoses.in/#profileImage"
+          },
+          "inLanguage": "en-US"
         },
         {
           "@type": "Person",
@@ -109,11 +132,15 @@
           "author": [
             {
               "@type": "Book",
-              "name": "Bible — Made Easy for Everyone"
+              "@id": "https://www.praveenkumarmoses.in/mybooks/bible-made-easy-for-everyone.html#book",
+              "name": "Bible — Made Easy for Everyone",
+              "url": "https://www.praveenkumarmoses.in/mybooks/bible-made-easy-for-everyone.html"
             },
             {
               "@type": "Book",
-              "name": "Love and Love Only"
+              "@id": "https://www.praveenkumarmoses.in/mybooks/love-and-love-only.html#book",
+              "name": "Love and Love Only",
+              "url": "https://www.praveenkumarmoses.in/mybooks/love-and-love-only.html"
             }
           ],
           "brand": [
@@ -136,18 +163,15 @@
           "@id": "https://www.praveenkumarmoses.in/#website",
           "url": "https://www.praveenkumarmoses.in/",
           "name": "Praveen Kumar Moses",
+          "description": "Official website of Praveen Kumar Moses — Author, Bible Teacher & Software Engineer.",
           "publisher": {
             "@id": "https://www.praveenkumarmoses.in/#person"
-          }
+          },
+          "inLanguage": "en-US"
         }
       ]
     }
     </script>
-
-    <!-- Plus Jakarta Sans: Premium, High-Contrast Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <style>
       :root {
@@ -674,8 +698,8 @@
       }
 
       /* Custom Mini-Background Accents for Placeholders */
-      .reel-rlm { background-image: url('rlm_logo.png'); background-size: cover; background-position: center; }
-      .reel-tkm { background-image: url('tkm_logo.jpg'); background-size: cover; background-position: center; }
+      .reel-rlm { background-image: url('https://www.praveenkumarmoses.in/rlm_logo.png'); background-size: cover; background-position: center; }
+      .reel-tkm { background-image: url('https://www.praveenkumarmoses.in/tkm_logo.jpg'); background-size: cover; background-position: center; }
 
       .reel-placeholder-content {
         position: relative;
@@ -823,10 +847,10 @@
     <header class="site">
       <div class="nav-inner">
         <a class="brand" href="#top">
-          <img src="profile.jpg" alt="Praveen Kumar Moses Portrait" class="brand-avatar" />
+          <img src="https://www.praveenkumarmoses.in/praveen-kumar-moses.png" alt="Praveen Kumar Moses Avatar" class="brand-avatar" width="32" height="32" loading="eager" />
           PRAVEEN KUMAR MOSES
         </a>
-        <nav class="links">
+        <nav class="links" aria-label="Main Navigation">
           <a href="#professional">Mentorship</a>
           <a href="#books">My Books</a>
           <a href="#ministries">Ministries &amp; Spaces</a>
@@ -858,7 +882,7 @@
 
           <div class="hero-art reveal">
             <div class="frame">
-              <img src="praveen-kumar-moses.png" alt="Praveen Kumar Moses" class="big-photo" width="1200" height="1200" />
+              <img src="https://www.praveenkumarmoses.in/praveen-kumar-moses.png" alt="Praveen Kumar Moses Portrait" class="big-photo" width="1200" height="1200" loading="eager" fetchpriority="high" />
             </div>
           </div>
         </div>
@@ -878,33 +902,33 @@
           </div>
           <div class="pro-links-wrap reveal">
             <!-- X -->
-            <a class="btn-cta-social" href="https://x.com/itspkm" target="_blank" rel="noopener">
-              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <a class="btn-cta-social" href="https://x.com/itspkm" target="_blank" rel="noopener noreferrer" aria-label="Follow Praveen Kumar Moses on X">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               Follow on X
             </a>
             <!-- LinkedIn -->
-            <a class="btn-cta-social" href="https://linkedin.com/in/praveenkprabakaran/" target="_blank" rel="noopener">
-              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a class="btn-cta-social" href="https://linkedin.com/in/praveenkprabakaran/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Praveen Kumar Moses on LinkedIn">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               Connect on LinkedIn
             </a>
             <!-- Instagram (Personal) -->
-            <a class="btn-cta-social" href="https://www.instagram.com/its.pkm" target="_blank" rel="noopener">
-              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            <a class="btn-cta-social" href="https://www.instagram.com/its.pkm" target="_blank" rel="noopener noreferrer" aria-label="Follow Praveen Kumar Moses on Instagram">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
               Instagram (@its.pkm)
             </a>
             <!-- Threads -->
-            <a class="btn-cta-social" href="https://www.threads.net/@its.pkm" target="_blank" rel="noopener">
+            <a class="btn-cta-social" href="https://www.threads.net/@its.pkm" target="_blank" rel="noopener noreferrer" aria-label="Follow Praveen Kumar Moses on Threads">
               <span style="font-size: 18px; line-height: 1;">🧵</span>
               Threads (@its.pkm)
             </a>
             <!-- YouTube Personal 1 -->
-            <a class="btn-cta-social" href="https://www.youtube.com/@its_pkm" target="_blank" rel="noopener">
-              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <a class="btn-cta-social" href="https://www.youtube.com/@its_pkm" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Praveen Kumar Moses on YouTube @its_pkm">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               YouTube (@its_pkm)
             </a>
             <!-- YouTube Personal 2 -->
-            <a class="btn-cta-social" href="https://www.youtube.com/@PraveenKumarMoses" target="_blank" rel="noopener">
-              <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <a class="btn-cta-social" href="https://www.youtube.com/@PraveenKumarMoses" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Praveen Kumar Moses on YouTube @PraveenKumarMoses">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               YouTube (@PraveenKumarMoses)
             </a>
           </div>
@@ -929,7 +953,7 @@
                 <h3>Bible — Made Easy for Everyone</h3>
                 <p>66 books, told like the story they actually are — in plain language, clear structure, and requiring no theology degree to complete framework understandings.</p>
               </div>
-              <a class="book-btn" href="./mybooks/bible-made-easy-for-everyone.html" target="_blank">Explore Book</a>
+              <a class="book-btn" href="./mybooks/bible-made-easy-for-everyone.html" target="_blank" rel="noopener">Explore Book</a>
             </div>
 
             <!-- Book 2 -->
@@ -938,14 +962,14 @@
                 <h3>Love and Love Only</h3>
                 <p>A deep structural path built out cleanly to help everyday readers explore complex relationships, navigate recovery frameworks safely, and find true emotional sure-footedness.</p>
               </div>
-              <a class="book-btn" href="./mybooks/love-and-love-only.html" target="_blank">Explore Book</a>
+              <a class="book-btn" href="./mybooks/love-and-love-only.html" target="_blank" rel="noopener">Explore Book</a>
             </div>
           </div>
 
           <!-- BOOK VISION ROADMAP INTERACTIVE MATRIX -->
           <div class="roadmap-container reveal">
             <div class="section-head">
-              <span class="eyebrow">Vision & Pipeline</span>
+              <span class="eyebrow">Vision &amp; Pipeline</span>
               <h3>Publishing Roadmap</h3>
             </div>
             
@@ -964,8 +988,8 @@
               <div class="roadmap-node released">
                 <div>
                   <span class="roadmap-status">Released</span>
-                  <h4>Love & Love Only</h4>
-                  <div class="subtitle">For Teens & Youth</div>
+                  <h4>Love &amp; Love Only</h4>
+                  <div class="subtitle">For Teens &amp; Youth</div>
                 </div>
                 <div class="roadmap-date">June 2026</div>
               </div>
@@ -1015,14 +1039,14 @@
             <!-- Ministry 1 -->
             <div class="ministry-item reveal">
               <div class="ministry-identity">
-                <img src="rlm_logo.png" alt="Regen Life Ministries Logo" class="ministry-logo" />
+                <img src="https://www.praveenkumarmoses.in/rlm_logo.png" alt="Regen Life Ministries Logo" class="ministry-logo" width="48" height="48" loading="lazy" />
                 <h3>Regen Life Ministries</h3>
               </div>
               <p>
                 A Christ-centered initiative dedicated to helping people grow in the knowledge of God's Word. With a deep passion for teaching the Bible in a way that is simple, practical, and relevant, we reach people of all ages and backgrounds through books, videos, and digital content. Our heart is to make the truths of Scripture easy to understand and apply.
               </p>
               <div class="ministry-actions">
-                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029Vb296PtJJhzhUHYhtZ3P" target="_blank">
+                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029Vb296PtJJhzhUHYhtZ3P" target="_blank" rel="noopener">
                   <span class="icon">💬</span> Join WhatsApp Channel
                 </a>
               </div>
@@ -1031,17 +1055,17 @@
             <!-- Ministry 2 -->
             <div class="ministry-item reveal">
               <div class="ministry-identity">
-                <img src="tkm_logo.jpg" alt="Tamil Kingdom Media Logo" class="ministry-logo" />
+                <img src="https://www.praveenkumarmoses.in/tkm_logo.jpg" alt="Tamil Kingdom Media Logo" class="ministry-logo" width="48" height="48" loading="lazy" />
                 <h3>Tamil Kingdom Media</h3>
               </div>
               <p>
                 Your space for faith, hope, and encouragement in Tamil! Every short video here carries a divine word of strength to lift your spirit, restore your faith, and remind you of God’s promises. Whether you’re going through challenges or seeking daily encouragement, you’ll find inspiration through Bible verses, motivational Tamil messages, and short stories that touch the heart.
               </p>
               <div class="ministry-actions">
-                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029VbC0ENB2UPBPiZi3AW2k" target="_blank">
+                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029VbC0ENB2UPBPiZi3AW2k" target="_blank" rel="noopener">
                   <span class="icon">💬</span> Join WhatsApp Channel
                 </a>
-                <a class="spotify-box" href="https://open.spotify.com/show/1j5cJQ22HwLNc8XWXZST0M" target="_blank">
+                <a class="spotify-box" href="https://open.spotify.com/show/1j5cJQ22HwLNc8XWXZST0M" target="_blank" rel="noopener">
                   <span class="icon">🎙️</span> Listen on Spotify Podcast
                 </a>
               </div>
@@ -1050,14 +1074,14 @@
             <!-- Initiative 3: Pixie Studios -->
             <div class="ministry-item reveal">
               <div class="ministry-identity">
-                <img src="pixie_logo.png" alt="Pixie Studios Logo" class="ministry-logo" />
+                <img src="https://www.praveenkumarmoses.in/pixie_logo.png" alt="Pixie Studios Logo" class="ministry-logo" width="48" height="48" loading="lazy" />
                 <h3>Pixie Studios</h3>
               </div>
               <p>
                 Sharing heart-touching Tamil moral stories and emotional short films that inspire kindness, hope, and empathy. We bring meaningful stories about animals, children, and everyday life lessons — told in Tamil with clear captions and universal emotion. Our goal is to move hearts, spark thought, and remind children and families that goodness still exists.
               </p>
               <div class="ministry-actions">
-                <a class="generic-box" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank">
+                <a class="generic-box" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank" rel="noopener">
                   <span class="icon">▶️</span> Watch on YouTube Channel
                 </a>
               </div>
@@ -1078,7 +1102,7 @@
           <div class="reels-grid">
             <!-- Reel 1 (RLM) -->
             <div class="reel-card reveal">
-              <div class="reel-phone-wrapper reel-rlm" data-reel-id="DTNe7uIknOw" onclick="loadReel(this)">
+              <div class="reel-phone-wrapper reel-rlm" data-reel-id="DTNe7uIknOw" onclick="loadReel(this)" role="button" aria-label="Play Reel: Why the Cross? Reason 3">
                 <div class="reel-placeholder-content">
                   <div class="reel-play-icon">▶</div>
                   <span class="reel-badge">Regen Life Ministries</span>
@@ -1087,7 +1111,7 @@
               <div class="reel-meta-info">
                 <h3>Why the Cross? – Reason 3</h3>
                 <p>Why did Jesus have to die on the Cross? Couldn’t God just forgive us without such pain? Give 3 minutes and gain eternal clarity.</p>
-                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTNe7uIknOw/" target="_blank">
+                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTNe7uIknOw/" target="_blank" rel="noopener">
                   Open on Instagram →
                 </a>
               </div>
@@ -1095,7 +1119,7 @@
 
             <!-- Reel 2 (TKM) -->
             <div class="reel-card reveal">
-              <div class="reel-phone-wrapper reel-tkm" data-reel-id="DTSj3-HD6rS" onclick="loadReel(this)">
+              <div class="reel-phone-wrapper reel-tkm" data-reel-id="DTSj3-HD6rS" onclick="loadReel(this)" role="button" aria-label="Play Reel: Destiny Activation">
                 <div class="reel-placeholder-content">
                   <div class="reel-play-icon">▶</div>
                   <span class="reel-badge">Tamil Kingdom Media</span>
@@ -1104,7 +1128,7 @@
               <div class="reel-meta-info">
                 <h3>Destiny Activation | உன் வாழ்க்கை ஒரு விபத்து அல்ல</h3>
                 <p>Discover the blueprint and deep meaning woven directly into your timeline. Your life is not an accident—step into your true calling today.</p>
-                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTSj3-HD6rS/" target="_blank">
+                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTSj3-HD6rS/" target="_blank" rel="noopener">
                   Open on Instagram →
                 </a>
               </div>
@@ -1124,7 +1148,7 @@
             <p>Listen to daily audio inspiration, motivational biblical messages, and deep scriptural studies right here.</p>
           </div>
           <div class="reveal" style="max-width: 700px; margin: 0 auto;">
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/1j5cJQ22HwLNc8XWXZST0M?utm_source=generator&theme=0&si=77bc1624b4d844f5" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe title="Tamil Kingdom Media Spotify Podcast Player" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/1j5cJQ22HwLNc8XWXZST0M?utm_source=generator&amp;theme=0&amp;si=77bc1624b4d844f5" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
       </section>
@@ -1146,10 +1170,10 @@
               <h3>Regen Life Ministries</h3>
               <span class="handle">@regenlifeministries</span>
               <div class="social-links-wrap">
-                <a class="social-link-item" href="https://youtube.com/@regenlifeministries" target="_blank">YouTube</a>
-                <a class="social-link-item" href="https://instagram.com/regenlifeministries" target="_blank">Instagram</a>
-                <a class="social-link-item" href="https://facebook.com/@regenlifeministries" target="_blank">Facebook</a>
-                <a class="social-link-item" href="https://threads.net/@regenlifeministries" target="_blank">Threads</a>
+                <a class="social-link-item" href="https://youtube.com/@regenlifeministries" target="_blank" rel="noopener">YouTube</a>
+                <a class="social-link-item" href="https://instagram.com/regenlifeministries" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-link-item" href="https://facebook.com/@regenlifeministries" target="_blank" rel="noopener">Facebook</a>
+                <a class="social-link-item" href="https://threads.net/@regenlifeministries" target="_blank" rel="noopener">Threads</a>
               </div>
             </div>
 
@@ -1158,10 +1182,10 @@
               <h3>Tamil Kingdom Media</h3>
               <span class="handle">@tamilkingdommedia</span>
               <div class="social-links-wrap">
-                <a class="social-link-item" href="https://youtube.com/@tamilkingdommedia" target="_blank">YouTube</a>
-                <a class="social-link-item" href="https://instagram.com/tamilkingdommedia" target="_blank">Instagram</a>
-                <a class="social-link-item" href="https://facebook.com/@tamilkingdommedia" target="_blank">Facebook</a>
-                <a class="social-link-item" href="https://threads.net/@tamilkingdommedia" target="_blank">Threads</a>
+                <a class="social-link-item" href="https://youtube.com/@tamilkingdommedia" target="_blank" rel="noopener">YouTube</a>
+                <a class="social-link-item" href="https://instagram.com/tamilkingdommedia" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-link-item" href="https://facebook.com/@tamilkingdommedia" target="_blank" rel="noopener">Facebook</a>
+                <a class="social-link-item" href="https://threads.net/@tamilkingdommedia" target="_blank" rel="noopener">Threads</a>
               </div>
             </div>
 
@@ -1170,10 +1194,10 @@
               <h3>Pixie Studios Official</h3>
               <span class="handle">@pixiestudiosofficial</span>
               <div class="social-links-wrap">
-                <a class="social-link-item" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank">YouTube</a>
-                <a class="social-link-item" href="https://www.facebook.com/@pixiestudiosofficial" target="_blank">Facebook</a>
-                <a class="social-link-item" href="https://www.instagram.com/pixiestudiosofficial" target="_blank">Instagram</a>
-                <a class="social-link-item" href="https://www.threads.net/@pixiestudiosofficial" target="_blank">Threads</a>
+                <a class="social-link-item" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank" rel="noopener">YouTube</a>
+                <a class="social-link-item" href="https://www.facebook.com/@pixiestudiosofficial" target="_blank" rel="noopener">Facebook</a>
+                <a class="social-link-item" href="https://www.instagram.com/pixiestudiosofficial" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-link-item" href="https://www.threads.net/@pixiestudiosofficial" target="_blank" rel="noopener">Threads</a>
               </div>
             </div>
           </div>
@@ -1195,6 +1219,7 @@
 
         const iframe = document.createElement('iframe');
         iframe.src = `https://www.instagram.com/reel/${reelId}/embed/`;
+        iframe.title = "Instagram Reel Player";
         iframe.allowTransparency = "true";
         iframe.allow = "encrypted-media";
         iframe.setAttribute('frameborder', '0');
@@ -1203,6 +1228,8 @@
         container.appendChild(iframe);
         
         element.removeAttribute('onclick');
+        element.removeAttribute('role');
+        element.removeAttribute('aria-label');
         element.style.cursor = 'default';
         
         element.innerHTML = '';
