@@ -11,7 +11,7 @@
       gtag('config', 'G-HX5V3DHR19');
     </script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     
     <!-- Primary SEO Meta Tags -->
     <title>Praveen Kumar Moses — Bible Teacher, Author &amp; Software Engineer</title>
@@ -23,7 +23,7 @@
     <link rel="canonical" href="https://www.praveenkumarmoses.in/" />
 
     <!-- Google-Compliant Favicon & Profile Icon Set -->
-    <link rel="icon" type="image/x-icon" href="https://www.praveenkumarmoses.in/favicon.ico"  />
+    <link rel="icon" type="image/x-icon" href="https://www.praveenkumarmoses.in/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="https://www.praveenkumarmoses.in/favicon.svg" />
     <link rel="icon" type="image/png" sizes="96x96" href="https://www.praveenkumarmoses.in/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="https://www.praveenkumarmoses.in/favicon-192x192.png" />
@@ -54,11 +54,6 @@
     <meta name="twitter:description" content="Explore clear theological frameworks, digital initiatives, and media platforms by Praveen Kumar Moses." />
     <meta name="twitter:image" content="https://www.praveenkumarmoses.in/praveen-kumar-moses.png" />
     <meta name="twitter:image:alt" content="Praveen Kumar Moses Portrait" />
-
-    <!-- Performance Preconnects -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
 
     <!-- Enhanced Technical Structured Data (JSON-LD Schema) -->
     <script type="application/ld+json">
@@ -175,21 +170,33 @@
     </script>
 
     <style>
+      /* --- APPLE DESIGN SYSTEM SPECIFICATION --- */
       :root {
-        --color-bg-light: #fafafa;
-        --color-bg-dark: #121212;
-        --color-card-bg: #ffffff;
-        --color-text-dark: #121212;
-        --color-text-light: #555555;
-        --color-text-inverse: #ffffff;
-        --color-text-muted: #888888;
-        --color-border: #eaeaea;
-        --color-accent: #000000;
-        --color-accent-hover: #333333;
-        --font-primary: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        --radius-card: 16px;
-        --radius-pill: 50px;
-        --maxw: 1140px;
+        --color-bg-base: #fbfbfd;
+        --color-bg-elevated: #ffffff;
+        --color-bg-secondary: #f5f5f7;
+        
+        --color-label-primary: #1d1d1f;
+        --color-label-secondary: #6e6e73;
+        --color-label-tertiary: #86868b;
+        
+        --color-accent-blue: #0071e3;
+        --color-accent-blue-hover: #0077ed;
+        
+        --color-separator: rgba(0, 0, 0, 0.08);
+        --color-card-border: rgba(0, 0, 0, 0.06);
+        --color-card-border-hover: rgba(0, 0, 0, 0.14);
+        
+        --font-apple: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+        --radius-sm: 8px;
+        --radius-md: 14px;
+        --radius-lg: 20px;
+        --radius-xl: 28px;
+        --radius-pill: 980px;
+
+        --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
+        --max-w: 1040px;
       }
 
       * {
@@ -200,19 +207,25 @@
 
       html {
         scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
 
       body {
-        font-family: var(--font-primary);
-        background: var(--color-bg-light);
-        color: var(--color-text-dark);
-        line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
+        font-family: var(--font-apple);
+        background-color: var(--color-bg-base);
+        color: var(--color-label-primary);
+        line-height: 1.47059;
+        font-size: 17px;
+        letter-spacing: -0.022em;
+        overflow-x: hidden;
       }
 
       img {
-        max-width: 100%;
         display: block;
+        max-width: 100%;
+        height: auto;
       }
 
       a {
@@ -221,41 +234,49 @@
       }
 
       .wrap {
-        max-width: var(--maxw);
+        max-width: var(--max-w);
         margin: 0 auto;
         padding: 0 24px;
       }
 
-      /* Thin Line Section Separator */
-      .section-divider {
-        border: 0;
-        border-top: 1px solid var(--color-border);
-        max-width: var(--maxw);
-        margin: 0 auto;
-      }
-
-      /* Eyebrow Style */
+      /* Apple Section Typography Standard */
       .eyebrow {
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: var(--color-text-light);
-        margin-bottom: 12px;
-        display: inline-block;
+        font-size: 13px;
+        line-height: 1.38462;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: var(--color-accent-blue);
+        margin-bottom: 8px;
+        display: block;
       }
 
-      h1, h2, h3, h4 {
-        font-weight: 800;
-        letter-spacing: -0.5px;
-        line-height: 1.15;
+      .section-headline {
+        font-size: clamp(34px, 4.5vw, 48px);
+        line-height: 1.08349;
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        color: var(--color-label-primary);
+        margin-bottom: 14px;
+      }
+
+      .section-lead {
+        font-size: 19px;
+        line-height: 1.4211;
+        font-weight: 400;
+        letter-spacing: -0.016em;
+        color: var(--color-label-secondary);
+        max-width: 680px;
+      }
+
+      .section-head {
+        margin-bottom: 48px;
       }
 
       /* Scroll Animation Utilities */
       .reveal {
         opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transform: translateY(24px);
+        transition: opacity 0.8s var(--ease-apple), transform 0.8s var(--ease-apple);
       }
       .reveal.in {
         opacity: 1;
@@ -265,259 +286,307 @@
         .reveal { opacity: 1; transform: none; transition: none; }
       }
 
-      /* Header Navigation */
-      header.site {
+      /* Navigation Bar (Glass Material) */
+      header.site-nav {
         position: sticky;
         top: 0;
-        z-index: 100;
-        background: rgba(250, 250, 250, 0.85);
-        backdrop-filter: blur(12px);
-        border-bottom: 1px solid var(--color-border);
+        z-index: 1000;
+        background: rgba(251, 251, 253, 0.8);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        border-bottom: 1px solid var(--color-separator);
+        transition: background 0.3s ease, border-color 0.3s ease;
       }
       .nav-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 14px 24px;
-        max-width: var(--maxw);
+        height: 52px;
+        max-width: var(--max-w);
         margin: 0 auto;
+        padding: 0 24px;
       }
       .brand {
-        font-weight: 800;
-        font-size: 15px;
-        letter-spacing: -0.3px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 12px;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: var(--color-label-primary);
+        opacity: 0.92;
+        transition: opacity 0.2s;
+      }
+      .brand:hover {
+        opacity: 1;
       }
       .brand-avatar {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         object-fit: cover;
-        border: 1px solid var(--color-border);
+        box-shadow: 0 0 0 1px var(--color-separator);
       }
       nav.links {
         display: flex;
-        gap: 32px;
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--color-text-light);
+        align-items: center;
+        gap: 28px;
+      }
+      nav.links a {
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        color: var(--color-label-secondary);
+        transition: color 0.15s ease;
       }
       nav.links a:hover {
-        color: var(--color-accent);
+        color: var(--color-label-primary);
       }
-      .nav-cta {
-        background: var(--color-accent);
-        color: var(--color-text-inverse);
-        padding: 8px 18px;
+      .nav-action {
+        background: var(--color-label-primary);
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        padding: 6px 14px;
         border-radius: var(--radius-pill);
-        font-size: 13px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: background 0.2s ease;
+        transition: background 0.2s var(--ease-apple), transform 0.15s ease;
       }
-      .nav-cta:hover {
-        background: var(--color-accent-hover);
+      .nav-action:hover {
+        background: #333336;
       }
-      @media (max-width: 820px) {
+      @media (max-width: 768px) {
         nav.links { display: none; }
       }
 
-      /* Hero Section */
+      /* Sections General */
+      section.section {
+        padding: 100px 0;
+      }
+      @media (max-width: 768px) {
+        section.section { padding: 64px 0; }
+      }
+
+      .hairline {
+        height: 1px;
+        background: var(--color-separator);
+        border: 0;
+        max-width: var(--max-w);
+        margin: 0 auto;
+      }
+
+      /* 1. Hero Section */
       .hero {
-        padding: 60px 0 80px;
+        padding: 80px 0 96px;
       }
       .hero-grid {
         display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1fr 420px;
         gap: 64px;
         align-items: center;
       }
       @media (max-width: 880px) {
-        .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
-        .hero-actions { justify-content: center; }
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 48px;
+        }
       }
-      .hero h1 {
-        font-size: clamp(36px, 5vw, 50px);
-        margin-bottom: 20px;
+      .hero-headline {
+        font-size: clamp(40px, 5.5vw, 60px);
+        line-height: 1.05;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        color: var(--color-label-primary);
+        margin-bottom: 24px;
       }
-      .hero h1 em {
+      .hero-headline em {
         font-style: normal;
-        border-bottom: 4px solid var(--color-accent);
+        color: var(--color-label-primary);
+        display: inline-block;
       }
       .hero-sub {
-        font-size: 18px;
-        color: var(--color-text-light);
-        margin-bottom: 20px;
-        line-height: 1.7;
+        font-size: 20px;
+        line-height: 1.45;
+        font-weight: 400;
+        letter-spacing: -0.018em;
+        color: var(--color-label-secondary);
+        margin-bottom: 18px;
       }
       .hero-extra {
         font-size: 16px;
-        color: var(--color-text-light);
-        margin-bottom: 30px;
+        line-height: 1.55;
+        font-weight: 400;
+        letter-spacing: -0.014em;
+        color: var(--color-label-tertiary);
+        margin-bottom: 36px;
       }
       .hero-actions {
         display: flex;
+        align-items: center;
         gap: 16px;
         flex-wrap: wrap;
       }
+
+      /* Apple Button System */
       .btn-primary {
-        background: var(--color-accent);
-        color: var(--color-text-inverse);
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: background 0.2s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 22px;
+        background: var(--color-accent-blue);
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.015em;
+        border-radius: var(--radius-pill);
+        transition: background 0.2s var(--ease-apple), transform 0.15s ease;
       }
-      .btn-primary:hover { background: var(--color-accent-hover); }
+      .btn-primary:hover {
+        background: var(--color-accent-blue-hover);
+      }
       .btn-secondary {
-        border: 1px solid #cccccc;
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: border 0.2s, background 0.2s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 22px;
+        background: rgba(0, 0, 0, 0.05);
+        color: var(--color-label-primary);
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.015em;
+        border-radius: var(--radius-pill);
+        border: 1px solid var(--color-card-border);
+        transition: background 0.2s var(--ease-apple), border-color 0.2s ease;
       }
-      .btn-secondary:hover { border-color: var(--color-accent); background: #f0f0f0; }
-      
-      .hero-art .frame {
-        background: var(--color-card-bg);
-        border-radius: var(--radius-card);
-        padding: 20px;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.04);
-        border: 1px solid var(--color-border);
+      .btn-secondary:hover {
+        background: rgba(0, 0, 0, 0.08);
+        border-color: rgba(0, 0, 0, 0.12);
       }
-      .hero-art img.big-photo {
-        border-radius: calc(var(--radius-card) - 4px);
+      .hero-art-frame {
+        position: relative;
+        background: var(--color-bg-secondary);
+        border-radius: var(--radius-xl);
+        padding: 12px;
+        border: 1px solid var(--color-card-border);
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+      }
+      .hero-art-frame img {
+        border-radius: calc(var(--radius-xl) - 8px);
         width: 100%;
-        height: auto;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
       }
 
-      /* Professional Mentorship Section Styling */
+      /* 2. Professional Mentorship Section */
       .pro-mentorship {
-        background: #f3f3f3;
-      }
-      .pro-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+        background: var(--color-bg-secondary);
       }
       .topmate-services-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin-top: 10px;
+        margin-bottom: 28px;
       }
       @media (max-width: 768px) {
-        .topmate-services-grid {
-          grid-template-columns: 1fr;
-        }
+        .topmate-services-grid { grid-template-columns: 1fr; }
       }
       .topmate-card {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-card);
-        padding: 28px;
+        background: var(--color-bg-elevated);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-card-border);
+        padding: 32px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.03);
-        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        transition: transform 0.3s var(--ease-apple), box-shadow 0.3s var(--ease-apple), border-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.02);
       }
       .topmate-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-        border-color: var(--color-accent);
+        transform: translateY(-2px);
+        border-color: var(--color-card-border-hover);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
       }
-      .topmate-tag {
-        font-size: 10px;
-        font-weight: 800;
+      .apple-pill-tag {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        background: #eef2ff;
-        color: #3b5998;
         padding: 4px 10px;
         border-radius: var(--radius-pill);
+        background: rgba(0, 113, 227, 0.1);
+        color: var(--color-accent-blue);
         display: inline-block;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
         align-self: flex-start;
       }
-      .topmate-tag.membership {
-        background: #000000;
-        color: #ffffff;
+      .apple-pill-tag.membership {
+        background: rgba(0, 0, 0, 0.07);
+        color: var(--color-label-primary);
       }
       .topmate-card h3 {
-        font-size: 20px;
-        margin-bottom: 8px;
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: -0.025em;
+        color: var(--color-label-primary);
+        margin-bottom: 10px;
       }
       .topmate-card p {
-        color: var(--color-text-light);
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.5;
+        color: var(--color-label-secondary);
+        margin-bottom: 28px;
       }
-      .topmate-btn {
+      .apple-link-btn {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        font-size: 13px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        color: var(--color-accent);
-        margin-top: auto;
+        gap: 6px;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--color-accent-blue);
+        letter-spacing: -0.015em;
+        transition: gap 0.2s ease;
       }
-      .topmate-card:hover .topmate-btn {
-        color: #000;
-        text-decoration: underline;
+      .apple-link-btn:hover {
+        gap: 9px;
       }
+
+      /* Social Mentorship Links Grid */
       .pro-links-wrap {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 16px;
-        margin-top: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
       }
       .btn-cta-social {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        gap: 10px;
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        padding: 12px 20px;
-        border-radius: 8px;
-        font-weight: 700;
+        gap: 12px;
+        min-height: 48px;
+        padding: 0 16px;
+        background: var(--color-bg-elevated);
+        border: 1px solid var(--color-card-border);
+        border-radius: var(--radius-md);
         font-size: 14px;
-        color: var(--color-text-dark);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        color: var(--color-label-primary);
+        transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s var(--ease-apple);
       }
       .btn-cta-social:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-        border-color: var(--color-accent);
+        background: #ffffff;
+        border-color: var(--color-card-border-hover);
+        transform: translateY(-1px);
       }
       .btn-cta-social .icon-svg {
-        width: 18px;
-        height: 18px;
+        width: 17px;
+        height: 17px;
         fill: currentColor;
         flex-shrink: 0;
+        color: var(--color-label-secondary);
       }
 
-      /* Sections General Layout */
-      section.section { padding: 70px 0; }
-      .section-head { max-width: 640px; margin-bottom: 40px; }
-      .section-head h2 { font-size: clamp(26px, 4vw, 34px); margin-top: 8px; margin-bottom: 12px; }
-      .section-head p { color: var(--color-text-light); font-size: 16px; }
-
-      /* Books Section */
+      /* 3. Books Section */
       .books-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -527,323 +596,301 @@
         .books-grid { grid-template-columns: 1fr; }
       }
       .book-card {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-card);
-        padding: 32px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+        background: var(--color-bg-elevated);
+        border: 1px solid var(--color-card-border);
+        border-radius: var(--radius-lg);
+        padding: 36px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+        transition: transform 0.3s var(--ease-apple), box-shadow 0.3s var(--ease-apple), border-color 0.3s ease;
       }
-      .book-meta h3 {
-        font-size: 22px;
+      .book-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--color-card-border-hover);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.04);
+      }
+      .book-card h3 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        color: var(--color-label-primary);
         margin-bottom: 12px;
       }
-      .book-meta p {
-        color: var(--color-text-light);
+      .book-card p {
         font-size: 15px;
-        margin-bottom: 24px;
-        line-height: 1.65;
-      }
-      .book-btn {
-        display: inline-block;
-        text-align: center;
-        border: 2px solid var(--color-accent);
-        color: var(--color-text-dark);
-        font-weight: 700;
-        font-size: 13px;
-        padding: 10px 20px;
-        border-radius: 8px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: all 0.2s;
-        align-self: flex-start;
-      }
-      .book-btn:hover {
-        background: var(--color-accent);
-        color: var(--color-text-inverse);
+        line-height: 1.55;
+        color: var(--color-label-secondary);
+        margin-bottom: 28px;
       }
 
-      /* Roadmap Timeline */
+      /* Publishing Roadmap Timeline */
       .roadmap-container {
-        margin-top: 60px;
-        border-top: 1px solid var(--color-border);
-        padding-top: 60px;
+        margin-top: 72px;
+        border-top: 1px solid var(--color-separator);
+        padding-top: 56px;
       }
       .roadmap-grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 16px;
-        position: relative;
+        gap: 14px;
       }
       @media (max-width: 960px) {
-        .roadmap-grid { grid-template-columns: 1fr; gap: 24px; }
+        .roadmap-grid { grid-template-columns: 1fr; gap: 14px; }
       }
       .roadmap-node {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
+        background: var(--color-bg-secondary);
+        border: 1px solid var(--color-card-border);
+        border-radius: var(--radius-md);
         padding: 20px;
-        border-radius: var(--radius-card);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        position: relative;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.01);
       }
       .roadmap-node.released {
-        border-color: var(--color-accent);
+        background: var(--color-bg-elevated);
+        border-color: rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
       }
-      .roadmap-status {
-        font-size: 9px;
-        font-weight: 800;
+      .roadmap-status-pill {
+        font-size: 10px;
+        font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 1.5px;
-        padding: 4px 8px;
-        border-radius: 4px;
+        letter-spacing: 0.02em;
+        padding: 3px 8px;
+        border-radius: var(--radius-pill);
         display: inline-block;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         align-self: flex-start;
       }
-      .roadmap-node.released .roadmap-status {
-        background: #000000;
+      .roadmap-node.released .roadmap-status-pill {
+        background: var(--color-label-primary);
         color: #ffffff;
       }
-      .roadmap-node.planned .roadmap-status {
-        background: #f0f0f0;
-        color: #666666;
+      .roadmap-node.planned .roadmap-status-pill {
+        background: rgba(0, 0, 0, 0.06);
+        color: var(--color-label-tertiary);
       }
       .roadmap-node h4 {
         font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        color: var(--color-label-primary);
         margin-bottom: 4px;
-        font-weight: 800;
       }
       .roadmap-node .subtitle {
-        font-size: 11px;
-        color: var(--color-text-light);
-        font-weight: 600;
-        margin-bottom: 18px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
+        font-size: 12px;
+        color: var(--color-label-secondary);
+        font-weight: 500;
+        margin-bottom: 20px;
       }
       .roadmap-date {
         font-size: 12px;
-        font-weight: 700;
-        color: var(--color-text-dark);
+        font-weight: 600;
+        color: var(--color-label-tertiary);
+        border-top: 1px solid var(--color-separator);
+        padding-top: 12px;
         margin-top: auto;
-        border-top: 1px dashed var(--color-border);
-        padding-top: 10px;
       }
 
-      /* Ministries & Initiatives Section (Dark Mode Block) */
-      .ministries {
-        background: var(--color-bg-dark);
-        color: var(--color-text-inverse);
-        padding: 70px 0;
+      /* 4. Ministries & Core Initiatives (Apple Dark Material Surface) */
+      .ministries-dark {
+        background: #000000;
+        color: #ffffff;
+        padding: 100px 0;
       }
-      .ministries .eyebrow { color: var(--color-text-muted); }
-      .ministries h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 32px; }
+      .ministries-dark .eyebrow {
+        color: #2997ff;
+      }
+      .ministries-dark .section-headline {
+        color: #f5f5f7;
+      }
+      .ministries-dark .section-lead {
+        color: #86868b;
+      }
       .ministries-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-        border-top: 1px solid #2a2a2a;
-        padding-top: 40px;
+        gap: 20px;
+        margin-top: 48px;
       }
       @media (max-width: 990px) {
-        .ministries-grid { grid-template-columns: repeat(2, 1fr); }
+        .ministries-grid { grid-template-columns: 1fr; gap: 24px; }
       }
-      @media (max-width: 768px) {
-        .ministries-grid { grid-template-columns: 1fr; gap: 32px; }
+      .ministry-card {
+        background: #161617;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: border-color 0.3s ease, transform 0.3s var(--ease-apple);
+      }
+      .ministry-card:hover {
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
       }
       .ministry-identity {
         display: flex;
         align-items: center;
         gap: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
       }
       .ministry-logo {
-        width: 48px;
-        height: 48px;
+        width: 44px;
+        height: 44px;
         border-radius: 10px;
         object-fit: cover;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
       }
-      .ministry-item h3 {
+      .ministry-card h3 {
         font-size: 20px;
-        letter-spacing: -0.3px;
-        color: var(--color-text-inverse);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: #f5f5f7;
       }
-      .ministry-item p {
+      .ministry-card p {
         font-size: 14px;
-        line-height: 1.6;
-        color: #cccccc;
-        margin-bottom: 24px;
+        line-height: 1.55;
+        color: #a1a1a6;
+        margin-bottom: 28px;
       }
       .ministry-actions {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        align-items: flex-start;
       }
-
-      /* Action Link Boxes */
-      .wa-channel-box, .spotify-box, .generic-box {
+      .apple-dark-action {
         display: inline-flex;
         align-items: center;
-        gap: 12px;
-        background: rgba(255, 255, 255, 0.06);
+        gap: 10px;
+        min-height: 42px;
+        padding: 0 16px;
+        background: rgba(255, 255, 255, 0.08);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 10px 18px;
-        border-radius: 8px;
+        border-radius: var(--radius-sm);
         font-size: 13px;
-        font-weight: 600;
+        font-weight: 500;
         color: #ffffff;
-        transition: background 0.2s, border-color 0.2s;
-        width: 100%;
-        max-width: 300px;
+        transition: background 0.2s ease, border-color 0.2s ease;
       }
-      .wa-channel-box:hover, .generic-box:hover {
-        background: rgba(255, 255, 255, 0.12);
+      .apple-dark-action:hover {
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.22);
       }
-      .spotify-box:hover {
+      .apple-dark-action.spotify:hover {
         background: rgba(30, 215, 96, 0.15);
-        border-color: #1ed760;
+        border-color: rgba(30, 215, 96, 0.4);
       }
 
-      /* Reels Section Grid Layout */
+      /* 5. Reels Section */
       .reels-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
-        max-width: 820px;
+        max-width: 780px;
         margin: 0 auto;
       }
       @media (max-width: 768px) {
         .reels-grid { grid-template-columns: 1fr; gap: 48px; }
       }
-      
       .reel-card {
-        background: transparent;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
-
-      /* STRICT MOBILE PORTRAIT ASPECT RATIO (9:16) */
-      .reel-phone-wrapper {
+      .reel-device-container {
         position: relative;
         width: 100%;
-        max-width: 320px;
+        max-width: 300px;
         aspect-ratio: 9 / 16;
-        background: #0d0d0d;
-        border-radius: 24px;
-        border: 6px solid #1a1a1a;
-        box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+        background: #000000;
+        border-radius: 36px;
+        border: 7px solid #1d1d1f;
+        box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.25);
         overflow: hidden;
         cursor: pointer;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
-        margin-bottom: 20px;
+        justify-content: center;
+        transition: transform 0.3s var(--ease-apple), box-shadow 0.3s ease;
+        margin-bottom: 24px;
       }
-      .reel-phone-wrapper:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 20px 48px rgba(0,0,0,0.25);
+      .reel-device-container:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 28px 60px -10px rgba(0, 0, 0, 0.32);
       }
-      .reel-phone-wrapper::before {
+      .reel-device-container::before {
         content: "";
         position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%);
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 100%);
         z-index: 1;
         transition: opacity 0.3s ease;
       }
-      .reel-phone-wrapper:hover::before {
-        opacity: 0.75;
-      }
-
-      /* Custom Mini-Background Accents for Placeholders */
       .reel-rlm { background-image: url('https://www.praveenkumarmoses.in/rlm_logo.png'); background-size: cover; background-position: center; }
       .reel-tkm { background-image: url('https://www.praveenkumarmoses.in/tkm_logo.jpg'); background-size: cover; background-position: center; }
 
-      .reel-placeholder-content {
+      .reel-overlay {
         position: relative;
         z-index: 2;
         padding: 24px;
         pointer-events: none;
       }
-      .reel-play-icon {
-        width: 56px;
-        height: 56px;
-        background: rgba(255, 255, 255, 0.18);
-        border: 2px solid #ffffff;
+      .reel-play-symbol {
+        width: 52px;
+        height: 52px;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto 16px;
-        font-size: 20px;
         color: #ffffff;
-        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.2s;
+        font-size: 18px;
+        padding-left: 3px;
+        transition: transform 0.25s var(--ease-apple), background 0.2s ease;
       }
-      .reel-phone-wrapper:hover .reel-play-icon {
-        transform: scale(1.1);
+      .reel-device-container:hover .reel-play-symbol {
+        transform: scale(1.08);
         background: #ffffff;
         color: #000000;
       }
-      .reel-badge {
-        font-size: 9px;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        background: rgba(255,255,255,0.2);
-        padding: 4px 10px;
+      .reel-meta-tag {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(6px);
+        padding: 4px 12px;
         border-radius: var(--radius-pill);
-        display: inline-block;
         color: #ffffff;
       }
-      
-      .reel-meta-info {
-        max-width: 320px;
-      }
-      .reel-meta-info h3 {
-        font-size: 18px;
+      .reel-meta h3 {
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
         margin-bottom: 8px;
-        line-height: 1.3;
+        color: var(--color-label-primary);
       }
-      .reel-meta-info p {
-        color: var(--color-text-light);
+      .reel-meta p {
         font-size: 14px;
-        margin-bottom: 16px;
         line-height: 1.5;
+        color: var(--color-label-secondary);
+        margin-bottom: 14px;
+        max-width: 300px;
       }
-      .reel-action-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        font-weight: 700;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        color: var(--color-accent);
-        transition: color 0.2s;
-      }
-      .reel-card:hover .reel-action-btn {
-        color: var(--color-text-light);
-      }
-
-      /* Live Player Embed Styling */
       .reel-iframe-container {
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset: 0;
         z-index: 5;
         background: #000000;
       }
@@ -853,339 +900,354 @@
         border: none;
       }
 
-      /* Connections Matrix */
+      /* 6. Audio Podcast Section */
+      .podcast-section {
+        background: var(--color-bg-secondary);
+      }
+
+      /* 7. Social Communities Matrix */
       .socials-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
       }
       @media (max-width: 900px) {
-        .socials-grid { grid-template-columns: repeat(2, 1fr); }
-      }
-      @media (max-width: 640px) {
         .socials-grid { grid-template-columns: 1fr; }
       }
       .social-card {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-card);
+        background: var(--color-bg-elevated);
+        border: 1px solid var(--color-card-border);
+        border-radius: var(--radius-lg);
         padding: 28px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.02);
       }
       .social-card h3 {
         font-size: 18px;
-        margin-bottom: 4px;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        color: var(--color-label-primary);
+        margin-bottom: 2px;
       }
       .social-card .handle {
-        font-size: 14px;
-        color: var(--color-text-muted);
+        font-size: 13px;
+        color: var(--color-label-tertiary);
         display: block;
-        margin-bottom: 16px;
-        font-weight: 600;
+        margin-bottom: 20px;
+        font-weight: 500;
       }
       .social-links-wrap {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 8px;
       }
-      .social-link-item {
+      .social-pill {
         font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        padding: 8px 14px;
-        background: #f0f0f0;
-        border-radius: 6px;
-        transition: background 0.2s, color 0.2s;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        padding: 6px 12px;
+        background: var(--color-bg-secondary);
+        border-radius: var(--radius-pill);
+        color: var(--color-label-primary);
+        transition: background 0.2s ease, color 0.2s ease;
       }
-      .social-link-item:hover {
-        background: var(--color-accent);
-        color: var(--color-text-inverse);
+      .social-pill:hover {
+        background: var(--color-label-primary);
+        color: #ffffff;
       }
 
-      /* Site Footer */
-      footer.site {
-        border-top: 1px solid var(--color-border);
-        text-align: center;
-        padding: 32px 0;
-        font-size: 13px;
-        color: var(--color-text-muted);
-        background: var(--color-card-bg);
+      /* Apple Minimalist Footer */
+      footer.site-footer {
+        padding: 40px 0 60px;
+        background: var(--color-bg-secondary);
+        border-top: 1px solid var(--color-separator);
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: var(--color-label-tertiary);
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
       }
     </style>
   </head>
   <body>
-    <header class="site">
+    <!-- Apple Glass Sticky Navigation -->
+    <header class="site-nav">
       <div class="nav-inner">
-        <a class="brand" href="#top">
-          <img src="https://www.praveenkumarmoses.in/praveen-kumar-moses.png" alt="Praveen Kumar Moses Avatar" class="brand-avatar" width="32" height="32" loading="eager" />
-          PRAVEEN KUMAR MOSES
+        <a class="brand" href="#top" aria-label="Praveen Kumar Moses Home">
+          <img src="https://www.praveenkumarmoses.in/praveen-kumar-moses.png" alt="Praveen Kumar Moses" class="brand-avatar" width="28" height="28" loading="eager" />
+          <span>Praveen Kumar Moses</span>
         </a>
         <nav class="links" aria-label="Main Navigation">
           <a href="#professional">Mentorship</a>
-          <a href="#books">My Books</a>
+          <a href="#books">Books</a>
           <a href="#ministries">Ministries &amp; Spaces</a>
-          <a href="#reels">Latest Reels</a>
+          <a href="#reels">Reels</a>
+          <a href="#podcast">Podcast</a>
           <a href="#socials">Connect</a>
         </nav>
-        <a class="nav-cta" href="#books">Explore Books</a>
+        <a class="nav-action" href="#books">Explore Books</a>
       </div>
     </header>
 
     <main id="top">
-      <!-- 1. SELF INTRO (HERO SECTION) -->
+      <!-- 1. Hero Introduction -->
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy reveal">
-            <span class="eyebrow">Founder, Teacher &amp; Engineer</span>
-            <h1>Hi, I'm <em>Praveen Kumar Moses</em>.</h1>
+            <span class="eyebrow">Teacher · Author · Software Engineer</span>
+            <h1 class="hero-headline">Clarity across code, scriptures, and media.</h1>
             <p class="hero-sub">
-              I am a software engineer, Bible teacher, and framework designer with a deep passion for clarity and truth. My singular work is built around helping people discover deep structural scriptural roots while navigating life cleanly with an open mind.
+              I am Praveen Kumar Moses. I build robust engineering architectures and design structured, accessible biblical frameworks that help modern readers navigate life and truth with an open mind.
             </p>
             <p class="hero-extra">
-              Through strategic media layout architectures, narrative framework designs, and interactive content, I help modern readers and families build strong moral and spiritual foundations effortlessly.
+              Merging deep structural engineering discipline with narrative theological systems to help individuals and families develop strong spiritual and practical foundations.
             </p>
             <div class="hero-actions">
-              <a class="btn-primary" href="#books">View My Books</a>
-              <a class="btn-secondary" href="#ministries">Our Foundations</a>
+              <a class="btn-primary" href="#books">View Published Books</a>
+              <a class="btn-secondary" href="#ministries">Foundations &amp; Spaces</a>
             </div>
           </div>
 
           <div class="hero-art reveal">
-            <div>
-              <img src="https://www.praveenkumarmoses.in/praveen-kumar-moses-4.png" alt="Praveen Kumar Moses Portrait" class="big-photo" width="1200" height="1200" loading="eager" fetchpriority="high" />
+            <div class="hero-art-frame">
+              <img src="https://www.praveenkumarmoses.in/praveen-kumar-moses-4.png" alt="Praveen Kumar Moses Portrait" width="1200" height="1200" loading="eager" fetchpriority="high" />
             </div>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
+      <hr class="hairline" />
 
-      <!-- PROFESSIONAL DEVELOPMENT & MENTORSHIP SECTION -->
+      <!-- 2. Mentorship & Professional Growth -->
       <section class="section pro-mentorship" id="professional">
-        <div class="wrap pro-grid">
-          <div class="section-head reveal" style="margin-bottom: 16px;">
-            <span class="eyebrow">Personal, Professional &amp; Practical Growth</span>
-            <h2>Professional Mentorship &amp; Life Lessons</h2>
-            <p style="margin-top: 12px; font-size: 16px; line-height: 1.7;">
-              Connect with me directly on my personal channels to explore software engineering, web development, AI, productivity blueprints, and practical framework strategies designed to streamline your day-to-day timeline.
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Direct Mentorship &amp; Guidance</span>
+            <h2 class="section-headline">Professional Engineering &amp; Roadmaps</h2>
+            <p class="section-lead">
+              Connect directly for guidance on software engineering, production backend systems, Generative AI implementations, and architectural frameworks.
             </p>
           </div>
 
-          <!-- TOPMATE SPOTLIGHT CARDS -->
+          <!-- Spotlight Mentorship Cards -->
           <div class="topmate-services-grid reveal">
-            <!-- Membership Card -->
+            <!-- Membership -->
             <div class="topmate-card">
               <div>
-                <span class="topmate-tag membership">Membership Access</span>
+                <span class="apple-pill-tag membership">Monthly Membership</span>
                 <h3>AI Engineer Pro</h3>
-                <p>Master AI engineering, GenAI, and production backends in Tamil. Includes complete access to all study PDFs and code repository walk-throughs.</p>
+                <p>Master AI engineering, LLM architectures, and production backend services in Tamil. Includes complete access to comprehensive study modules and walkthrough repositories.</p>
               </div>
-              <a class="topmate-btn" href="https://topmate.io/iam_praveen/membership/647" target="_blank" rel="noopener noreferrer">
-                Join Now &amp; Get Instant Access →
+              <a class="apple-link-btn" href="https://topmate.io/iam_praveen/membership/647" target="_blank" rel="noopener noreferrer">
+                Explore Community Access <span>→</span>
               </a>
             </div>
 
-            <!-- Priority DM Card -->
+            <!-- Priority Direct Advisory -->
             <div class="topmate-card">
               <div>
-                <span class="topmate-tag">Priority DM</span>
+                <span class="apple-pill-tag">Direct Advisory</span>
                 <h3>Ask Me Anything: Career, AI &amp; Backend</h3>
-                <p>Get personalized, direct feedback and clear strategic guidance regarding engineering roadmaps, backend scaling, and generative AI careers.</p>
+                <p>Get focused feedback and strategic evaluation on engineering roadmaps, backend scaling, and transitioning into AI engineering roles.</p>
               </div>
-              <a class="topmate-btn" href="https://topmate.io/iam_praveen/2311260/pay?utm_source=public_profile&amp;utm_campaign=iam_praveen" target="_blank" rel="noopener noreferrer">
-                Send Priority DM →
+              <a class="apple-link-btn" href="https://topmate.io/iam_praveen/2311260/pay?utm_source=public_profile&amp;utm_campaign=iam_praveen" target="_blank" rel="noopener noreferrer">
+                Send Priority DM <span>→</span>
               </a>
             </div>
           </div>
 
+          <!-- Professional Connection Channels -->
           <div class="pro-links-wrap reveal">
-            <!-- Topmate Profile Link -->
-            <a class="btn-cta-social" href="https://topmate.io/iam_praveen" target="_blank" rel="noopener noreferrer" aria-label="Book 1-on-1 Mentorship on Topmate">
-              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <a class="btn-cta-social" href="https://topmate.io/iam_praveen" target="_blank" rel="noopener noreferrer">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
               Topmate Profile
             </a>
-            <!-- X -->
-            <a class="btn-cta-social" href="https://x.com/itspkm" target="_blank" rel="noopener noreferrer" aria-label="Follow Praveen Kumar Moses on X">
-              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <a class="btn-cta-social" href="https://x.com/itspkm" target="_blank" rel="noopener noreferrer">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               Follow on X
             </a>
-            <!-- LinkedIn -->
-            <a class="btn-cta-social" href="https://www.linkedin.com/in/praveenkumar-mscit/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Praveen Kumar Moses on LinkedIn">
-              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a class="btn-cta-social" href="https://www.linkedin.com/in/praveenkumar-mscit/" target="_blank" rel="noopener noreferrer">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               Connect on LinkedIn
             </a>
-            <!-- Instagram (Personal) -->
-            <a class="btn-cta-social" href="https://www.instagram.com/its.pkm" target="_blank" rel="noopener noreferrer" aria-label="Follow Praveen Kumar Moses on Instagram">
-              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            <a class="btn-cta-social" href="https://www.instagram.com/its.pkm" target="_blank" rel="noopener noreferrer">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
               Instagram (@its.pkm)
             </a>
-            <!-- Threads -->
-            <a class="btn-cta-social" href="https://www.threads.net/@its.pkm" target="_blank" rel="noopener noreferrer" aria-label="Follow Praveen Kumar Moses on Threads">
-              <span style="font-size: 18px; line-height: 1;">🧵</span>
-              Threads (@its.pkm)
-            </a>
-            <!-- YouTube Personal 1 -->
-            <a class="btn-cta-social" href="https://www.youtube.com/@its_pkm" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Praveen Kumar Moses on YouTube @its_pkm">
-              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <a class="btn-cta-social" href="https://www.youtube.com/@its_pkm" target="_blank" rel="noopener noreferrer">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               YouTube (@its_pkm)
             </a>
-            <!-- YouTube Personal 2 -->
-            <a class="btn-cta-social" href="https://www.youtube.com/@PraveenKumarMoses" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Praveen Kumar Moses on YouTube @PraveenKumarMoses">
-              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <a class="btn-cta-social" href="https://www.youtube.com/@PraveenKumarMoses" target="_blank" rel="noopener noreferrer">
+              <svg class="icon-svg" aria-hidden="true" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               YouTube (@PraveenKumarMoses)
             </a>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
+      <hr class="hairline" />
 
-      <!-- 2. MY BOOKS SECTION -->
+      <!-- 3. Books Section -->
       <section class="section" id="books">
         <div class="wrap">
           <div class="section-head reveal">
-            <span class="eyebrow">Published Works</span>
-            <h2>Books Designed for Clear Framework Processing</h2>
-            <p>Everyday reading structures engineered to bring quick clarity, clean historical setups, and high practical application directly to your hands.</p>
+            <span class="eyebrow">Publications</span>
+            <h2 class="section-headline">Structural Scripture &amp; Emotional Clarity</h2>
+            <p class="section-lead">
+              Works engineered for straightforward comprehension, historical context, and immediate everyday application without theological jargon.
+            </p>
           </div>
 
           <div class="books-grid">
-            <!-- Book 1 -->
             <div class="book-card reveal">
-              <div class="book-meta">
+              <div>
                 <h3>Bible — Made Easy for Everyone</h3>
-                <p>66 books, told like the story they actually are — in plain language, clear structure, and requiring no theology degree to complete framework understandings.</p>
+                <p>66 books conveyed as the cohesive narrative they are: clear language, intuitive historical contexts, and structured frameworks that eliminate barriers to understanding.</p>
               </div>
-              <a class="book-btn" href="./mybooks/bible-made-easy-for-everyone.html" target="_blank" rel="noopener">Explore Book</a>
+              <a class="apple-link-btn" href="./mybooks/bible-made-easy-for-everyone.html" target="_blank" rel="noopener">
+                Read Overview <span>→</span>
+              </a>
             </div>
 
-            <!-- Book 2 -->
             <div class="book-card reveal">
-              <div class="book-meta">
+              <div>
                 <h3>Love and Love Only</h3>
-                <p>A deep structural path built out cleanly to help everyday readers explore complex relationships, navigate recovery frameworks safely, and find true emotional sure-footedness.</p>
+                <p>A systematic framework designed to assist young readers in understanding relationship dynamics, processing recovery cleanly, and developing emotional sure-footedness.</p>
               </div>
-              <a class="book-btn" href="./mybooks/love-and-love-only.html" target="_blank" rel="noopener">Explore Book</a>
+              <a class="apple-link-btn" href="./mybooks/love-and-love-only.html" target="_blank" rel="noopener">
+                Read Overview <span>→</span>
+              </a>
             </div>
           </div>
 
-          <!-- BOOK VISION ROADMAP INTERACTIVE MATRIX -->
+          <!-- Roadmap Pipeline -->
           <div class="roadmap-container reveal">
-            <div class="section-head">
-              <span class="eyebrow">Vision &amp; Pipeline</span>
-              <h3>Publishing Roadmap</h3>
+            <div class="section-head" style="margin-bottom: 24px;">
+              <span class="eyebrow">Release Timeline</span>
+              <h3 style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em;">Publishing Roadmap</h3>
             </div>
             
             <div class="roadmap-grid">
-              <!-- Node 1 -->
               <div class="roadmap-node released">
                 <div>
-                  <span class="roadmap-status">Released</span>
+                  <span class="roadmap-status-pill">Released</span>
                   <h4>Bible — Made Easy for Everyone</h4>
-                  <div class="subtitle">English</div>
+                  <div class="subtitle">English Edition</div>
                 </div>
                 <div class="roadmap-date">June 2025</div>
               </div>
 
-              <!-- Node 2 -->
               <div class="roadmap-node released">
                 <div>
-                  <span class="roadmap-status">Released</span>
+                  <span class="roadmap-status-pill">Released</span>
                   <h4>Love &amp; Love Only</h4>
-                  <div class="subtitle">For Teens &amp; Youth</div>
+                  <div class="subtitle">Teens &amp; Youth</div>
                 </div>
                 <div class="roadmap-date">June 2026</div>
               </div>
 
-              <!-- Node 3 -->
               <div class="roadmap-node planned">
                 <div>
-                  <span class="roadmap-status">Planned</span>
+                  <span class="roadmap-status-pill">In Production</span>
                   <h4>Bible — Made Easy for Everyone</h4>
-                  <div class="subtitle">Tamil</div>
+                  <div class="subtitle">Tamil Edition</div>
                 </div>
                 <div class="roadmap-date">Dec 2026</div>
               </div>
 
-              <!-- Node 4 -->
               <div class="roadmap-node planned">
                 <div>
-                  <span class="roadmap-status">Planned</span>
+                  <span class="roadmap-status-pill">Planned</span>
                   <h4>Kids Bible</h4>
-                  <div class="subtitle">For Children</div>
+                  <div class="subtitle">Illustrated Edition</div>
                 </div>
                 <div class="roadmap-date">May 2027</div>
               </div>
 
-              <!-- Node 5 -->
               <div class="roadmap-node planned">
                 <div>
-                  <span class="roadmap-status">Planned</span>
-                  <h4>Reaching the LGBTQ Community with Love</h4>
-                  <div class="subtitle">Core Study</div>
+                  <span class="roadmap-status-pill">Planned</span>
+                  <h4>Reaching with Love</h4>
+                  <div class="subtitle">Core Study Framework</div>
                 </div>
                 <div class="roadmap-date">July 2027</div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
-      <!-- 3 & 5. MY MINISTRIES & CORE INITIATIVES (DARK SECTION) -->
-      <section class="ministries" id="ministries">
+      <!-- 4. Ministries & Spaces (Apple Dark Mode Section) -->
+      <section class="ministries-dark" id="ministries">
         <div class="wrap">
-          <span class="eyebrow">Outreach &amp; Creative Spaces</span>
-          <h2 class="reveal">Building Foundations Across Media Frameworks</h2>
+          <div class="section-head reveal">
+            <span class="eyebrow">Digital Ministries</span>
+            <h2 class="section-headline">Reaching Communities Across Formats</h2>
+            <p class="section-lead">
+              Creating accessible spaces for biblical understanding, practical hope, and value-based narratives across regional languages and audio-visual channels.
+            </p>
+          </div>
 
           <div class="ministries-grid">
-            <!-- Ministry 1 -->
-            <div class="ministry-item reveal">
-              <div class="ministry-identity">
-                <img src="https://www.praveenkumarmoses.in/rlm_logo.png" alt="Regen Life Ministries Logo" class="ministry-logo" width="48" height="48" loading="lazy" />
-                <h3>Regen Life Ministries</h3>
+            <!-- Regen Life Ministries -->
+            <div class="ministry-card reveal">
+              <div>
+                <div class="ministry-identity">
+                  <img src="https://www.praveenkumarmoses.in/rlm_logo.png" alt="Regen Life Ministries Logo" class="ministry-logo" width="44" height="44" loading="lazy" />
+                  <h3>Regen Life Ministries</h3>
+                </div>
+                <p>
+                  A Christ-centered initiative focused on making biblical truths plain and actionable through structured writing, video teaching, and community dialogue.
+                </p>
               </div>
-              <p>
-                A Christ-centered initiative dedicated to helping people grow in the knowledge of God's Word. With a deep passion for teaching the Bible in a way that is simple, practical, and relevant, we reach people of all ages and backgrounds through books, videos, and digital content. Our heart is to make the truths of Scripture easy to understand and apply.
-              </p>
               <div class="ministry-actions">
-                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029Vb296PtJJhzhUHYhtZ3P" target="_blank" rel="noopener">
-                  <span class="icon">💬</span> Join WhatsApp Channel
+                <a class="apple-dark-action" href="https://www.whatsapp.com/channel/0029Vb296PtJJhzhUHYhtZ3P" target="_blank" rel="noopener">
+                  <span>💬</span> Join WhatsApp Channel
                 </a>
               </div>
             </div>
 
-            <!-- Ministry 2 -->
-            <div class="ministry-item reveal">
-              <div class="ministry-identity">
-                <img src="https://www.praveenkumarmoses.in/tkm_logo.jpg" alt="Tamil Kingdom Media Logo" class="ministry-logo" width="48" height="48" loading="lazy" />
-                <h3>Tamil Kingdom Media</h3>
+            <!-- Tamil Kingdom Media -->
+            <div class="ministry-card reveal">
+              <div>
+                <div class="ministry-identity">
+                  <img src="https://www.praveenkumarmoses.in/tkm_logo.jpg" alt="Tamil Kingdom Media Logo" class="ministry-logo" width="44" height="44" loading="lazy" />
+                  <h3>Tamil Kingdom Media</h3>
+                </div>
+                <p>
+                  A Tamil-language media initiative offering concise scriptural reflections, spiritual encouragement, and podcast messages designed to reinforce faith.
+                </p>
               </div>
-              <p>
-                Your space for faith, hope, and encouragement in Tamil! Every short video here carries a divine word of strength to lift your spirit, restore your faith, and remind you of God’s promises. Whether you’re going through challenges or seeking daily encouragement, you’ll find inspiration through Bible verses, motivational Tamil messages, and short stories that touch the heart.
-              </p>
               <div class="ministry-actions">
-                <a class="wa-channel-box" href="https://www.whatsapp.com/channel/0029VbC0ENB2UPBPiZi3AW2k" target="_blank" rel="noopener">
-                  <span class="icon">💬</span> Join WhatsApp Channel
+                <a class="apple-dark-action" href="https://www.whatsapp.com/channel/0029VbC0ENB2UPBPiZi3AW2k" target="_blank" rel="noopener">
+                  <span>💬</span> Join WhatsApp Channel
                 </a>
-                <a class="spotify-box" href="https://open.spotify.com/show/1j5cJQ22HwLNc8XWXZST0M" target="_blank" rel="noopener">
-                  <span class="icon">🎙️</span> Listen on Spotify Podcast
+                <a class="apple-dark-action spotify" href="https://open.spotify.com/show/1j5cJQ22HwLNc8XWXZST0M" target="_blank" rel="noopener">
+                  <span>🎙️</span> Spotify Podcast
                 </a>
               </div>
             </div>
 
-            <!-- Initiative 3: Pixie Studios -->
-            <div class="ministry-item reveal">
-              <div class="ministry-identity">
-                <img src="https://www.praveenkumarmoses.in/pixie_logo.png" alt="Pixie Studios Logo" class="ministry-logo" width="48" height="48" loading="lazy" />
-                <h3>Pixie Studios</h3>
+            <!-- Pixie Studios -->
+            <div class="ministry-card reveal">
+              <div>
+                <div class="ministry-identity">
+                  <img src="https://www.praveenkumarmoses.in/pixie_logo.png" alt="Pixie Studios Logo" class="ministry-logo" width="44" height="44" loading="lazy" />
+                  <h3>Pixie Studios</h3>
+                </div>
+                <p>
+                  Producing thoughtful Tamil moral stories and animated narratives that cultivate kindness, empathy, and constructive character in children and families.
+                </p>
               </div>
-              <p>
-                Sharing heart-touching Tamil moral stories and emotional short films that inspire kindness, hope, and empathy. We bring meaningful stories about animals, children, and everyday life lessons — told in Tamil with clear captions and universal emotion. Our goal is to move hearts, spark thought, and remind children and families that goodness still exists.
-              </p>
               <div class="ministry-actions">
-                <a class="generic-box" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank" rel="noopener">
-                  <span class="icon">▶️</span> Watch on YouTube Channel
+                <a class="apple-dark-action" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank" rel="noopener">
+                  <span>▶️</span> YouTube Channel
                 </a>
               </div>
             </div>
@@ -1193,46 +1255,48 @@
         </div>
       </section>
 
-      <!-- 6. LATEST REELS SECTION -->
+      <!-- 5. Short-Form Video Reels -->
       <section class="section" id="reels">
         <div class="wrap">
-          <div class="section-head reveal">
-            <span class="eyebrow">Featured Videos</span>
-            <h2>Latest Reels &amp; Messages</h2>
-            <p>Dive quickly into critical, high-impact truths. Click any card to load and play the video directly inside the mobile preview frame.</p>
+          <div class="section-head reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
+            <span class="eyebrow">Interactive Media</span>
+            <h2 class="section-headline">Short-Form Studies &amp; Reflections</h2>
+            <p class="section-lead" style="margin-left: auto; margin-right: auto;">
+              Select a frame to load and play the interactive message directly in place.
+            </p>
           </div>
 
           <div class="reels-grid">
-            <!-- Reel 1 (RLM) -->
+            <!-- Reel 1 -->
             <div class="reel-card reveal">
-              <div class="reel-phone-wrapper reel-rlm" data-reel-id="DTNe7uIknOw" onclick="loadReel(this)" role="button" aria-label="Play Reel: Why the Cross? Reason 3">
-                <div class="reel-placeholder-content">
-                  <div class="reel-play-icon">▶</div>
-                  <span class="reel-badge">Regen Life Ministries</span>
+              <div class="reel-device-container reel-rlm" data-reel-id="DTNe7uIknOw" onclick="loadReel(this)" role="button" aria-label="Play Reel: Why the Cross? Reason 3" tabindex="0">
+                <div class="reel-overlay">
+                  <div class="reel-play-symbol">▶</div>
+                  <span class="reel-meta-tag">Regen Life Ministries</span>
                 </div>
               </div>
-              <div class="reel-meta-info">
+              <div class="reel-meta">
                 <h3>Why the Cross? – Reason 3</h3>
-                <p>Why did Jesus have to die on the Cross? Couldn’t God just forgive us without such pain? Give 3 minutes and gain eternal clarity.</p>
-                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTNe7uIknOw/" target="_blank" rel="noopener">
-                  Open on Instagram →
+                <p>Exploring the necessity and depth of redemption in an accessible 3-minute explanation.</p>
+                <a class="apple-link-btn" href="https://www.instagram.com/reel/DTNe7uIknOw/" target="_blank" rel="noopener">
+                  Instagram <span>→</span>
                 </a>
               </div>
             </div>
 
-            <!-- Reel 2 (TKM) -->
+            <!-- Reel 2 -->
             <div class="reel-card reveal">
-              <div class="reel-phone-wrapper reel-tkm" data-reel-id="DTSj3-HD6rS" onclick="loadReel(this)" role="button" aria-label="Play Reel: Destiny Activation">
-                <div class="reel-placeholder-content">
-                  <div class="reel-play-icon">▶</div>
-                  <span class="reel-badge">Tamil Kingdom Media</span>
+              <div class="reel-device-container reel-tkm" data-reel-id="DTSj3-HD6rS" onclick="loadReel(this)" role="button" aria-label="Play Reel: Destiny Activation" tabindex="0">
+                <div class="reel-overlay">
+                  <div class="reel-play-symbol">▶</div>
+                  <span class="reel-meta-tag">Tamil Kingdom Media</span>
                 </div>
               </div>
-              <div class="reel-meta-info">
+              <div class="reel-meta">
                 <h3>Destiny Activation | உன் வாழ்க்கை ஒரு விபத்து அல்ல</h3>
-                <p>Discover the blueprint and deep meaning woven directly into your timeline. Your life is not an accident—step into your true calling today.</p>
-                <a class="reel-action-btn" href="https://www.instagram.com/reel/DTSj3-HD6rS/" target="_blank" rel="noopener">
-                  Open on Instagram →
+                <p>Understanding deliberate direction and spiritual purpose in everyday life.</p>
+                <a class="apple-link-btn" href="https://www.instagram.com/reel/DTSj3-HD6rS/" target="_blank" rel="noopener">
+                  Instagram <span>→</span>
                 </a>
               </div>
             </div>
@@ -1240,67 +1304,68 @@
         </div>
       </section>
 
-      <hr class="section-divider" />
+      <hr class="hairline" />
 
-      <!-- STANDALONE PODCAST SECTION -->
-      <section class="section" id="podcast" style="background: #fdfdfd;">
+      <!-- 6. Podcast Section -->
+      <section class="section podcast-section" id="podcast">
         <div class="wrap">
-          <div class="section-head reveal" style="max-width: 640px; margin: 0 auto 32px; text-align: center;">
+          <div class="section-head reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
             <span class="eyebrow">Audio Teaching</span>
-            <h2>Tamil Kingdom Media Podcast</h2>
-            <p>Listen to daily audio inspiration, motivational biblical messages, and deep scriptural studies right here.</p>
+            <h2 class="section-headline">Tamil Kingdom Media Podcast</h2>
+            <p class="section-lead" style="margin-left: auto; margin-right: auto;">
+              Structured audio devotionals and thematic biblical expositions available on Spotify.
+            </p>
           </div>
-          <div class="reveal" style="max-width: 700px; margin: 0 auto;">
-            <iframe title="Tamil Kingdom Media Spotify Podcast Player" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/1j5cJQ22HwLNc8XWXZST0M?utm_source=generator&amp;theme=0&amp;si=77bc1624b4d844f5" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="reveal" style="max-width: 680px; margin: 0 auto;">
+            <iframe title="Tamil Kingdom Media Spotify Podcast Player" data-testid="embed-iframe" style="border-radius: 16px; border: 1px solid var(--color-card-border);" src="https://open.spotify.com/embed/show/1j5cJQ22HwLNc8XWXZST0M?utm_source=generator&amp;theme=0&amp;si=77bc1624b4d844f5" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
+      <hr class="hairline" />
 
-      <!-- 4. SOCIAL MEDIA CONNECT MATRIX -->
+      <!-- 7. Channels & Community Matrix -->
       <section class="section" id="socials">
         <div class="wrap">
           <div class="section-head reveal">
-            <span class="eyebrow">Stay Connected</span>
-            <h2>Follow Our Communities Across Platforms</h2>
-            <p>Access regular short-form video releases, moral storytelling, scriptural breakdowns, and ecosystem updates instantly.</p>
+            <span class="eyebrow">Ecosystem</span>
+            <h2 class="section-headline">Community Channels</h2>
+            <p class="section-lead">
+              Direct access points to continuous updates, video lessons, and channel feeds.
+            </p>
           </div>
 
           <div class="socials-grid">
-            <!-- Handle 1 -->
             <div class="social-card reveal">
               <h3>Regen Life Ministries</h3>
               <span class="handle">@regenlifeministries</span>
               <div class="social-links-wrap">
-                <a class="social-link-item" href="https://youtube.com/@regenlifeministries" target="_blank" rel="noopener">YouTube</a>
-                <a class="social-link-item" href="https://instagram.com/regenlifeministries" target="_blank" rel="noopener">Instagram</a>
-                <a class="social-link-item" href="https://facebook.com/@regenlifeministries" target="_blank" rel="noopener">Facebook</a>
-                <a class="social-link-item" href="https://threads.net/@regenlifeministries" target="_blank" rel="noopener">Threads</a>
+                <a class="social-pill" href="https://youtube.com/@regenlifeministries" target="_blank" rel="noopener">YouTube</a>
+                <a class="social-pill" href="https://instagram.com/regenlifeministries" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-pill" href="https://facebook.com/@regenlifeministries" target="_blank" rel="noopener">Facebook</a>
+                <a class="social-pill" href="https://threads.net/@regenlifeministries" target="_blank" rel="noopener">Threads</a>
               </div>
             </div>
 
-            <!-- Handle 2 -->
             <div class="social-card reveal">
               <h3>Tamil Kingdom Media</h3>
               <span class="handle">@tamilkingdommedia</span>
               <div class="social-links-wrap">
-                <a class="social-link-item" href="https://youtube.com/@tamilkingdommedia" target="_blank" rel="noopener">YouTube</a>
-                <a class="social-link-item" href="https://instagram.com/tamilkingdommedia" target="_blank" rel="noopener">Instagram</a>
-                <a class="social-link-item" href="https://facebook.com/@tamilkingdommedia" target="_blank" rel="noopener">Facebook</a>
-                <a class="social-link-item" href="https://threads.net/@tamilkingdommedia" target="_blank" rel="noopener">Threads</a>
+                <a class="social-pill" href="https://youtube.com/@tamilkingdommedia" target="_blank" rel="noopener">YouTube</a>
+                <a class="social-pill" href="https://instagram.com/tamilkingdommedia" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-pill" href="https://facebook.com/@tamilkingdommedia" target="_blank" rel="noopener">Facebook</a>
+                <a class="social-pill" href="https://threads.net/@tamilkingdommedia" target="_blank" rel="noopener">Threads</a>
               </div>
             </div>
 
-            <!-- Handle 3: Pixie Studios -->
             <div class="social-card reveal">
               <h3>Pixie Studios Official</h3>
               <span class="handle">@pixiestudiosofficial</span>
               <div class="social-links-wrap">
-                <a class="social-link-item" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank" rel="noopener">YouTube</a>
-                <a class="social-link-item" href="https://www.facebook.com/@pixiestudiosofficial" target="_blank" rel="noopener">Facebook</a>
-                <a class="social-link-item" href="https://www.instagram.com/pixiestudiosofficial" target="_blank" rel="noopener">Instagram</a>
-                <a class="social-link-item" href="https://www.threads.net/@pixiestudiosofficial" target="_blank" rel="noopener">Threads</a>
+                <a class="social-pill" href="https://www.youtube.com/@pixiestudiosofficial" target="_blank" rel="noopener">YouTube</a>
+                <a class="social-pill" href="https://www.facebook.com/@pixiestudiosofficial" target="_blank" rel="noopener">Facebook</a>
+                <a class="social-pill" href="https://www.instagram.com/pixiestudiosofficial" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-pill" href="https://www.threads.net/@pixiestudiosofficial" target="_blank" rel="noopener">Threads</a>
               </div>
             </div>
           </div>
@@ -1308,10 +1373,15 @@
       </section>
     </main>
 
-    <footer class="site">
-      <div class="wrap">© 2026 Praveen Kumar Moses · All rights reserved</div>
+    <!-- Apple-Style Minimal Footer -->
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div>Copyright &copy; 2026 Praveen Kumar Moses. All rights reserved.</div>
+        <div>Engineered for clarity, purpose, and craft.</div>
+      </div>
     </footer>
 
+    <!-- Interactive Scripts -->
     <script>
       function loadReel(element) {
         const reelId = element.getAttribute('data-reel-id');
@@ -1333,13 +1403,15 @@
         element.removeAttribute('onclick');
         element.removeAttribute('role');
         element.removeAttribute('aria-label');
+        element.removeAttribute('tabindex');
         element.style.cursor = 'default';
         
         element.innerHTML = '';
         element.appendChild(container);
       }
 
-      const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+      // Smooth scroll reveal observer
+      const observerOptions = { threshold: 0.08, rootMargin: "0px 0px -40px 0px" };
       const io = new IntersectionObserver((entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
