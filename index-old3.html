@@ -589,8 +589,11 @@
       /* 3. Books Section */
       .books-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+      }
+      @media (max-width: 768px) {
+        .books-grid { grid-template-columns: 1fr; }
       }
       .book-card {
         background: var(--color-bg-elevated);
@@ -630,8 +633,11 @@
       }
       .roadmap-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-template-columns: repeat(5, 1fr);
         gap: 14px;
+      }
+      @media (max-width: 960px) {
+        .roadmap-grid { grid-template-columns: 1fr; gap: 14px; }
       }
       .roadmap-node {
         background: var(--color-bg-secondary);
@@ -1118,16 +1124,6 @@
                 Read Overview <span>→</span>
               </a>
             </div>
-
-            <div class="book-card reveal">
-              <div>
-                <h3>Vedhagamam Anaivarukkum Elithil Puriyum Vagaiyil</h3>
-                <p>The comprehensive Tamil edition of "Bible — Made Easy for Everyone", retaining the same clear historical context and practical framework for Tamil readers.</p>
-              </div>
-              <a class="apple-link-btn" href="https://notionpress.com/in/read/vedhagamam-anaivarukkum-elithil-puriyum-vagaiyil" target="_blank" rel="noopener">
-                Read Overview <span>→</span>
-              </a>
-            </div>
           </div>
 
           <!-- Roadmap Pipeline -->
@@ -1156,20 +1152,20 @@
                 <div class="roadmap-date">June 2026</div>
               </div>
 
-              <div class="roadmap-node released">
+              <div class="roadmap-node planned">
                 <div>
-                  <span class="roadmap-status-pill">Released</span>
-                  <h4>Vedhagamam Anaivarukkum Elithil Puriyum Vagaiyil</h4>
-                  <div class="subtitle">Bible — Made Easy for Everyone - Tamil Edition</div>
+                  <span class="roadmap-status-pill">In Production</span>
+                  <h4>Bible — Made Easy for Everyone</h4>
+                  <div class="subtitle">Tamil Edition</div>
                 </div>
-                <div class="roadmap-date">November 2026</div>
+                <div class="roadmap-date">Dec 2026</div>
               </div>
 
               <div class="roadmap-node planned">
                 <div>
                   <span class="roadmap-status-pill">Planned</span>
-                  <h4>BIBLE – Made Easy for Kids</h4>
-                  <div class="subtitle">A child-friendly Bible book</div>
+                  <h4>Kids Bible</h4>
+                  <div class="subtitle">Illustrated Edition</div>
                 </div>
                 <div class="roadmap-date">May 2027</div>
               </div>
@@ -1177,73 +1173,10 @@
               <div class="roadmap-node planned">
                 <div>
                   <span class="roadmap-status-pill">Planned</span>
-                  <h4>YOU ARE NOT BEYOND HIS LOVE</h4>
-                  <div class="subtitle">A Gospel-Centred Journey for LGBTQ People</div>
+                  <h4>Reaching with Love</h4>
+                  <div class="subtitle">Core Study Framework</div>
                 </div>
                 <div class="roadmap-date">July 2027</div>
-              </div>
-
-              <div class="roadmap-node planned">
-                <div>
-                  <span class="roadmap-status-pill">Planned</span>
-                  <h4>THE GOSPEL AT ANY COST</h4>
-                  <div class="subtitle">Stories of Missionary Faith and Sacrifice</div>
-                </div>
-                <div class="roadmap-date">2028</div>
-              </div>
-
-              <div class="roadmap-node planned">
-                <div>
-                  <span class="roadmap-status-pill">Planned</span>
-                  <h4>Suviseshathirkaaga Vaazhnthavargal</h4>
-                  <div class="subtitle">THE GOSPEL AT ANY COST - Tamil Edition</div>
-                </div>
-                <div class="roadmap-date">2028</div>
-              </div>
-
-              <div class="roadmap-node planned">
-                <div>
-                  <span class="roadmap-status-pill">Planned</span>
-                  <h4>THE PARABLES OF JESUS</h4>
-                  <div class="subtitle">Made Easy for Everyone</div>
-                </div>
-                <div class="roadmap-date">2029</div>
-              </div>
-
-              <div class="roadmap-node planned">
-                <div>
-                  <span class="roadmap-status-pill">Planned</span>
-                  <h4>Yesuvin Uvamaigal</h4>
-                  <div class="subtitle">THE PARABLES OF JESUS - Tamil Edition</div>
-                </div>
-                <div class="roadmap-date">2029</div>
-              </div>
-
-              <div class="roadmap-node planned">
-                <div>
-                  <span class="roadmap-status-pill">Planned</span>
-                  <h4>The Mind of Christ</h4>
-                  <div class="subtitle">A Study of His Character</div>
-                </div>
-                <div class="roadmap-date">2030</div>
-              </div>
-
-              <div class="roadmap-node planned">
-                <div>
-                  <span class="roadmap-status-pill">Planned</span>
-                  <h4>Witnesses of Jesus</h4>
-                  <div class="subtitle">Real People. Real Faith. Real Miracles.</div>
-                </div>
-                <div class="roadmap-date">2031</div>
-              </div>
-
-              <div class="roadmap-node planned">
-                <div>
-                  <span class="roadmap-status-pill">Planned</span>
-                  <h4>Yesivin Saatchigal</h4>
-                  <div class="subtitle">Witnesses of Jesus - Tamil Edition</div>
-                </div>
-                <div class="roadmap-date">2031</div>
               </div>
             </div>
           </div>
